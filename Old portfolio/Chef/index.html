@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Jaini&display=swap" rel="stylesheet" />
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .font-jaini {
+            font-family: 'Jaini', cursive;
+            /*  */
+        }
+
+        .font-italianno {
+            font-family: 'Italianno', cursive;
+        }
+    </style>
+    <title>Chef Marcus Rivers</title>
+</head>
+
+<body class="bg-[#1F1F21] text-white">
+    <section class="relative overflow-hidden min-h-screen pt-16">
+        <header class="absolute top-0 inset-x-0 z-20 px-6 py-4 flex items-center justify-between">
+            <a href="#"><img src="logo.png" alt="Logo" class="h-25 w-auto ml-[130%]" /></a>
+            <nav>
+                <ul class="flex space-x-8 font-jaini text-2xl -ml-[20%] -mt-[5%]">
+                    <li><a href="#" class="hover:text-red-400">Home</a></li>
+                    <li><a href="#" class="hover:text-red-400">About</a></li>
+                    <li><a href="#" class="hover:text-red-400">Services</a></li>
+                    <li><a href="#" class="hover:text-red-400">Dishes</a></li>
+                    <li><a href="#" class="hover:text-red-400">Experience</a></li>
+                    <li><a href="#" class="hover:text-red-400">Testimonials</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content Grid -->
+        <div
+            class="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 h-[calc(100vh-4rem)] items-start">
+            <!-- LEFT-->
+            <div class="relative w-full h-full flex justify-center">
+                <img src="fruits.png" alt=""
+                    class="absolute min-w-[200%] min-h-[180%] -mt-[30%] -ml-[55%] brightness-20" />
+                <img src="chef.png" alt="Chef Marcus Rivers" class="relative h-full object-contain" />
+            </div>
+
+            <!-- RIGHT: Text Content -->
+            <div class="self-center space-y-4 ml-[25%] -mr-10">
+                <h2 class="font-jaini uppercase text-sm md:text-base tracking-widest ml-5">
+                    Welcome to the culinary world of
+                </h2>
+                <h1 class="font-italianno text-7xl text-[#D40B2C]">
+                    Chef Marcus Rivers
+                </h1>
+                <p class="font-jaini text-2xl leading-relaxed max-w-[120%] -mr-[10%]">
+                    where every dish tells a story and every meal becomes an unforgettable
+                    experience. I bring passion, creativity, and precision to every plate.
+                    From intimate dinner parties to grand celebrations, I create bespoke
+                    culinary experiences that celebrate the art of fine dining.
+                </p>
+                <div class="mt-6 flex space-x-6">
+                    <a href="#"
+                        class="font-jaini inline-block px-6 py-3 text-2xl bg-[#D50D2E] rounded-lg hover:bg-red-700 transition">
+                        View my work
+                    </a>
+                    <a href="#"
+                        class="font-jaini inline-block px-6 py-3 text-2xl bg-[#D50D2E] rounded-lg hover:bg-red-700 transition">
+                        Book a consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="w-full bg-white py-16">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 ">
+
+            <!-- Left-->
+            <div class="space-y-8">
+                <h2 class="font-italianno text-8xl ml-[40%] -mt-[20%] text-red-500 relative inline-block">
+                    About me
+                    <span class="absolute bottom-0 left-0 w-[80%] h-1 bg-red-500"></span>
+                </h2>
+
+                <div class="bg-[#1F1F21] translate-x-40 -ml-[20%] w-[140%] text-white p-8">
+                    <p class="font-jaini text-xl leading-relaxed">
+                        My culinary journey began in my grandmother’s kitchen in Tuscany, where
+                        I learned that food is more than sustenance—it’s love, tradition, and
+                        artistry combined. After graduating from the Culinary Institute of
+                        America, I honed my skills in Michelin‑starred restaurants across New
+                        York, Paris, and San Francisco, working alongside renowned chefs who
+                        taught me that perfection lies in the details. My philosophy centers
+                        on sourcing the finest seasonal ingredients and treating them with
+                        respect and creativity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right-->
+            <div class="w-[132%] h-[125%] ml-[20%] overflow-hidden rounded-lg">
+                <img src="food.png" alt="About Chef" class="w-full h-[100%] object-cover" />
+            </div>
+
+        </div>
+        <div class="bg-black h-1 mt-[4.3%]"></div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="w-full bg-white py-16">
+        <div class="text-center mb-12">
+            <h2 class="font-italianno text-8xl text-red-500 relative inline-block">
+                Services
+                <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-500"></span>
+            </h2>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+            <!-- Left-->
+            <div class="flex flex-col items-center text-center space-y-4 -ml-[20%]">
+                <img src="private-chef.png" alt="Private Chef" class="w-80 h-80 rounded-full object-cover" />
+                <h3 class="font-jaini text-4xl text-red-500">
+                    Private Chef
+                </h3>
+                <p class="font-jaini text-lg text-[#000000] leading-relaxed">
+                    Transform your home into a fine dining restaurant with personalized menus crafted
+                    specifically for your tastes and dietary requirements. I handle everything from menu
+                    planning and shopping to cooking and presentation, allowing you to enjoy restaurant‑quality
+                    cuisine in the comfort of your own space.
+                </p>
+            </div>
+
+            <!-- Center -->
+            <div class="flex flex-col items-center text-center space-y-10 space-x-10">
+                <h3 class="font-jaini text-4xl text-red-500">
+                    Event Catering
+                </h3>
+                <p class="font-jaini text-lg text-[#000000] leading-relaxed max-w-prose">
+                    Transform your event into an unforgettable experience with bespoke menus, seamless
+                    service, and exquisite presentation. From intimate gatherings to grand celebrations,
+                    I take care of every detail so you can focus on making memories.
+                </p>
+                <img src="catering.png" alt="Event Catering" class="w-80 h-80 rounded-full object-cover" />
+            </div>
+
+            <!-- Right-->
+            <div class="flex flex-col items-center text-center space-y-4 -mr-[20%]">
+                <img src="workshop.png" alt="Cooking Classes And Workshops"
+                    class="w-80 h-80 rounded-full object-cover" />
+                <h3 class="font-jaini text-4xl text-red-500">
+                    Cooking Classes And Workshops
+                </h3>
+                <p class="font-jaini text-[#000000] text-lg leading-relaxed">
+                    Learn hands‑on techniques and insider tips in a fun, interactive setting. Whether
+                    you’re a beginner or an experienced home cook, my classes will elevate your skills
+                    and ignite your culinary passion.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Signature Dishes Section -->
+    <section class="relative overflow-hidden py-20" style="
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+  ">
+        <div class="absolute inset-0 bg-opacity-60"></div>
+        <div class="relative z-10 text-center mb-16">
+            <h2 class="font-italianno text-8xl text-red-500 inline-block relative">
+                Signature Dishes
+                <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-76 h-1 bg-red-500"></span>
+            </h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 py-8">
+            <!-- Card Template -->
+            <div class="relative bg-red-600 rounded-2xl overflow-hidden text-white shadow-lg">
+                <div class="absolute top-4 left-0 transform -translate-x-1/2">
+                    <span
+                        class="block bg-red-500 text-white font-jaini text-lg uppercase py-1 px-3 translate-x-8 translate-y-61.5 rotate-90">
+                        2022
+                    </span>
+                </div>
+                <div class="p-6 flex justify-center bg-red-600">
+                    <img src="one.png" alt="Dish 1" class="w-40 h-40 rounded-lg object-cover border-4 border-white" />
+                </div>
+                <!-- Divider -->
+                <div class="h-px bg-white"></div>
+                <div class="bg-white px-4 py-2">
+                    <h3 class="font-jaini text-lg text-gray-900 text-center">
+                        Seared Diver Scallops with Cauliflower Purée
+                    </h3>
+                </div>
+                <div class="bg-gray-900 p-4">
+                    <p class="font-jaini text-sm leading-relaxed ml-12">
+                        A harmonious blend of ocean sweetness and earthy richness, this dish
+                        showcases perfectly caramelized scallops paired with silky cauliflower
+                        purée and crispy pancetta, finished with microgreens and a drizzle of
+                        brown butter.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative bg-red-600 rounded-2xl overflow-hidden text-white shadow-lg">
+                <div class="absolute top-4 left-0 transform -translate-x-1/2">
+                    <span
+                        class="block bg-red-500 text-white font-jaini text-lg uppercase py-1 px-3 translate-x-8 translate-y-61.5 rotate-90">
+                        2022
+                    </span>
+                </div>
+                <div class="p-6 flex justify-center bg-red-600">
+                    <img src="two.png" alt="Dish 1" class="w-40 h-40 rounded-lg object-cover border-4 border-white" />
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px bg-white"></div>
+                <div class="bg-white px-4 py-2">
+                    <h3 class="font-jaini text-lg text-gray-900 text-center">
+                        Braised Short Rib with Truffle Polenta
+                    </h3>
+                </div>
+                <div class="bg-gray-900 p-4">
+                    <p class="font-jaini text-sm leading-relaxed ml-12">
+                        A harmonious blend of ocean sweetness and earthy
+                        richness, this dish showcases perfectly caramelized
+                        scallops paired with silky cauliflower purée and crispy
+                        pancetta, finished with microgreens and a drizzle of
+                        brown butter.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative bg-red-600 rounded-2xl overflow-hidden text-white shadow-lg">
+                <div class="absolute top-4 left-0 transform -translate-x-1/2">
+                    <span
+                        class="block bg-red-500 text-white font-jaini text-lg uppercase py-1 px-3 translate-x-8 translate-y-61.5 rotate-90">
+                        2022
+                    </span>
+                </div>
+                <div class="p-6 flex justify-center bg-red-600">
+                    <img src="three.png" alt="Dish 1" class="w-40 h-40 rounded-lg object-cover border-4 border-white" />
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px bg-white"></div>
+
+                <div class="bg-white px-4 py-2">
+                    <h3 class="font-jaini text-lg text-gray-900 text-center">
+                        Chocolate Soufflé with Raspberry Coulis
+                    </h3>
+                </div>
+
+                <div class="bg-gray-900 p-4">
+                    <p class="font-jaini text-sm leading-relaxed ml-12">
+                        A harmonious blend of ocean sweetness and earthy
+                        richness, this dish showcases perfectly caramelized
+                        scallops paired with silky cauliflower purée and crispy
+                        pancetta, finished with microgreens and a drizzle of
+                        brown butter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Awards Section -->
+    <section class="w-full bg-white py-16">
+        <div class="text-center">
+            <h2 class="font-italianno text-8xl text-red-500 relative inline-block">
+                Experience & Awards
+                <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-120 h-1 bg-red-500"></span>
+            </h2>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 py-10">
+            <!-- Left Column: Experience -->
+            <div>
+                <h3 class="font-jaini text-2xl text-red-500 mb-6">Experience</h3>
+                <ul class="border-l-2 border-red-500 pl-6 space-y-8">
+                    <li class="relative">
+                        <span class="absolute -left-3 top-1 bg-red-500 w-6 h-6 rounded-full"></span>
+                        <div class="font-jaini text-black font-semibold text-xl ml-[4%]">2018-2020: Sous Chef,
+                            Michelin-Starred Restaurant</div>
+                        <p class="font-jaini text-black leading-relaxed text-lg mt-2">
+                            Worked alongside the head chef to develop seasonal tasting menus,
+                            manage a brigade of 8 cooks, and ensure the highest plating standards.
+                        </p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-3 top-1 bg-red-500 w-6 h-6 rounded-full"></span>
+                        <div class="font-jaini text-black font-semibold text-xl ml-[4%]">2020-2023: Executive Chef, Fine
+                            Dining Venue</div>
+                        <p class="font-jaini text-black text-lg leading-relaxed mt-2">
+                            Oversaw all kitchen operations, designed bespoke private-dining
+                            experiences, and led a team to earn our first Michelin star.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Column: Awards -->
+            <div class="ml-[5%]">
+                <h3 class="font-jaini text-2xl text-red-500 mb-6">Awards</h3>
+                <ul class="border-l-2 border-red-500 pl-6 space-y-8">
+                    <li class="relative">
+                        <span class="absolute -left-3 top-1 bg-red-500 w-6 h-6 rounded-full"></span>
+                        <div class="font-jaini text-black font-semibold text-xl ml-[4%]">2021: Best Innovative Chef
+                            Award</div>
+                        <p class="font-jaini text-black text-lg leading-relaxed mt-2">
+                            Recognized by the National Culinary Society for groundbreaking
+                            work in modern-fusion cuisine.
+                        </p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-3 top-1 bg-red-500 w-6 h-6 rounded-full"></span>
+                        <div class="font-jaini text-black font-semibold text-xl ml-[4%]">2022: ‘Rising Star’ by Gourmet
+                            Magazine</div>
+                        <p class="font-jaini text-black text-lg leading-relaxed mt-2">
+                            Featured as one of the top five rising culinary talents under 35.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

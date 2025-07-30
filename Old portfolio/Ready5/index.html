@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey&display=swap" rel="stylesheet" />
+
+    <style>
+        .font-marhey {
+            font-family: 'Marhey', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full h-screen overflow-hidden" style="background: radial-gradient(
+        50.08% 55.72% at 50.08% 55.72%,
+        #C3B18E 0%,
+        rgba(105, 77, 41, 0.9) 100%
+      );">
+        <!-- full‑bleed background image -->
+        <img src="girl.png" alt="Portrait" class="absolute inset-0 w-full h-full object-cover" />
+
+        <!-- Transparent, centered navbar -->
+        <nav class="absolute inset-x-0 top-[5%]">
+            <div class="max-w-5xl mx-auto px-6 py-2 flex items-center justify-between
+                     bg-white/25 backdrop-blur-lg rounded-xl">
+                <!-- Logo “Focus” split for color effect -->
+                <div class="flex items-center space-x-0">
+                    <span class="text-2xl font-marhey font-bold text-[#694D29E5]">F</span>
+                    <span class="text-2xl font-marhey font-bold text-white">o</span>
+                    <span class="text-2xl font-marhey font-bold text-[#694D29E5]">
+                        cus
+                    </span>
+                </div>
+
+                <!-- Nav links -->
+                <ul class="flex space-x-8 text-white">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Skills</a></li>
+                    <li><a href="#" class="hover:underline">Experience</a></li>
+                    <li><a href="#" class="hover:underline">Projects</a></li>
+                    <li><a href="#" class="hover:underline">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Name & Title block -->
+        <div class="absolute bottom-20 right-10 text-white
+                   flex flex-col space-y-1">
+            <h1 class="text-5xl font-marhey uppercase -ml-[30%] mb-[5%]">HELLEN</h1>
+            <h2 class="text-6xl font-marhey text-[#694D29E5] uppercase -ml-[30%] mb-[36%]">BIRD</h2>
+            <p class="text-lg font-marhey text-[#693A2F] tracking-wide">
+                Portrait Photographer
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section id="sec2" class="relative w-full h-screen bg-white overflow-hidden py-16">
+        <!-- Tilted Overlay Image -->
+        <div class="absolute inset-x-0 h-[95%] mt-[1%] top-0 flex justify-center pointer-events-none filter drop-shadow-2xl"
+            style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);">
+            <img src="bg1.png" alt="Decorative tilted background"
+                class="w-[90%] h-[95%] max-w-none transform filter shadow-2xl"
+                style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);" />
+        </div>
+
+
+        <!-- Content -->
+        <div class="relative max-w-5xl mx-auto px-6">
+            <h2 class="font-marhey text-7xl text-[#693A2F] ml-[30%] mt-[10%] mb-6">About Me</h2>
+            <p class="font-marhey text-lg leading-relaxed text-[#693A2F] mb-8">
+                I’m a passionate creative professional with over 5 years of experience in visual storytelling and brand
+                development. My approach combines strategic thinking with artistic flair to deliver compelling solutions
+                that resonate with audiences. I believe in the power of authentic communication and strive to create
+                meaningful connections through every project I undertake. When I’m not behind the camera or crafting
+                brand narratives, you’ll find me exploring new coffee shops, hiking local trails, or experimenting with
+                analog photography techniques.
+            </p>
+
+            <h3 class="font-marhey text-2xl mb-4">Hobbies and Interests</h3>
+            <ul class="grid grid-cols-2 gap-x-8 gap-y-2 font-marhey text-[#693A2F] text-base">
+                <li>Analog Photography</li>
+                <li>Travel Photography</li>
+                <li>Coffee Culture</li>
+                <li>Hiking &amp; Nature</li>
+                <li>Reading</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- My Expertise -->
+    <section id="expertise" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="font-marhey text-[#693A2F] text-5xl md:text-7xl mb-12">My EXPERTISE</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Item 1 -->
+                <div class="flex flex-col items-center text-[#693A2F]">
+                    <img src="photography.png" alt="Expertise 1"
+                        class="w-32 h-32 md:w-50 md:h-50 rounded-full shadow-lg mb-4 object-cover" />
+                    <h3 class="font-marhey text-4xl mb-2">Photography</h3>
+                    <p class="text-base text-[#693A2F]">
+                        Crafting visual narratives that capture authentic emotions and brand essence. Specializing in
+                        portrait, commercial, and event photography with a focus on natural storytelling.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col items-center text-[#693A2F]">
+                    <h3 class="font-marhey text-4xl mb-2">Project Management</h3>
+                    <p class="text-base text-[#693A2F]">
+                        Coordinating creative teams and workflows to deliver projects on time and on budget. Skilled at
+                        planning, scheduling, and stakeholder communication.
+                    </p>
+                    <img src="project.png" alt="Expertise 2"
+                        class="w-32 h-32 md:w-50 md:h-50 rounded-full shadow-lg mb-4 object-cover" />
+
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex flex-col items-center text-[#693A2F]">
+                    <img src="social.png" alt="Expertise 3"
+                        class="w-40 h-40 md:w-50 md:h-50 rounded-full shadow-lg mb-4 object-cover" />
+                    <h3 class="font-marhey text-4xl mb-2">Social Media Strategy</h3>
+                    <p class="text-base text-[#693A2F]">
+                        Developing data‑driven content plans and campaigns that build engagement, grow audiences, and
+                        elevate brand presence across platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4 -->
+    <section id="sec4" class="relative w-full h-screen bg-white overflow-hidden py-16">
+        <div class="absolute inset-x-0 h-[100%] mt-[0.5%] top-0 flex justify-center pointer-events-none filter drop-shadow-2xl"
+            style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);">
+            <img src="bg1.png" alt="Decorative tilted background"
+                class="w-[90%] h-[100%] max-w-none transform filter drop-shadow-2xl"
+                style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);" />
+        </div>
+
+        <!-- Content -->
+        <div class="relative max-w-5xl mx-auto px-6 text-[#693A2F] font-marhey">
+            <!-- Title -->
+            <h2 class="text-7xl ml-[18%] mt-[4%] mb-12">CAREER JOURNEY</h2>
+
+            <!-- Lead Photographer -->
+            <div class="mb-10 -mt-12">
+                <h3 class="text-2xl font-semibold mb-2">Lead Photographer</h3>
+                <p class="italic mb-4">Creative Studio | 2023 – Present</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Manage 20+ client projects monthly across commercial and portrait sectors</li>
+                    <li>Increased studio revenue by 45% through strategic client relationships</li>
+                    <li>Lead photography team for large-scale commercial campaigns</li>
+                </ul>
+            </div>
+
+            <!-- Wedding and Event Photographer -->
+            <div class="mb-10 -mt-3">
+                <h3 class="text-2xl font-semibold mb-2">Wedding and Event Photographer</h3>
+                <p class="italic mb-4">Creative Studio | 2021 – 2023</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Captured over 50 weddings and events with a 98% client satisfaction rate</li>
+                    <li>Developed custom photography packages, boosting bookings by 30%</li>
+                    <li>Coordinated on‑site shoots and managed second shooters</li>
+                </ul>
+            </div>
+
+            <!-- Photo Intern -->
+            <div class="mb-10 -mt-3">
+                <h3 class="text-2xl font-semibold mb-2">Photo Intern</h3>
+                <p class="italic mb-4">Creative Studio | 2020 – 2021</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Assisted senior photographers on commercial shoots and studio setups</li>
+                    <li>Organized digital asset library and performed basic retouching</li>
+                    <li>Learned lighting techniques and post‑production workflow</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section 5-->
+    <section id="gallery" class="h-screen bg-white flex flex-col mt-[3%]">
+        <h2 class="font-marhey text-4xl text-center py-4">My Gallery</h2>
+
+        <div class="flex-1 overflow-hidden">
+            <div class="h-full max-w-5xl mx-auto p-8 bg-[#D4B380] rounded-3xl">
+                <div class="grid h-full grid-cols-4 grid-rows-3 gap-4">
+                    <div class="row-span-3 col-span-1">
+                        <img src="moon.png" alt="Gallery 1" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div>
+                        <img src="jar.png" alt="Gallery 2" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div>
+                        <img src="book.png" alt="Gallery 3" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div class="row-span-2 col-span-1 bg-white/30 rounded-2xl p-6">
+                        <p class="font-marhey text-[#693A2F] text-base">
+                            Explore a curated collection of my finest work showcasing the diversity and depth of my
+                            photographic vision. Each image represents a unique story captured with precision and
+                            artistic flair.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="paint.png" alt="Gallery 4" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div>
+                        <img src="plant.png" alt="Gallery 5" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div class="col-span-2 row-span-1">
+                        <img src="sand.png" alt="Gallery 6" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+
+                    <div>
+                        <img src="sunflower.png" alt="Gallery 7" class="w-full h-full object-cover rounded-2xl" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 6 -->
+    <section id="sec6" class="relative w-full h-screen mt-[5%] bg-white overflow-hidden py-16">
+        <div class="absolute inset-x-0 h-[100%] top-0 flex justify-center pointer-events-none filter drop-shadow-2xl"
+            style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);">
+            <div class="bg-gradient-to-b from-white to-[#A99472] w-[90%] h-full transform filter drop-shadow-2xl"
+                style="clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);"></div>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto px-6 text-[#693A2F] font-marhey">
+            <h2 class="text-5xl ml-[18%] mt-[4%] mb-12 -mr-[10%]">ACHIEVEMENT AND AFFILIATIONS</h2>
+            <div class="flex items-start space-x-16">
+                <div class="relative w-1/2 h-[50%] max-w-sm rounded-2xl overflow-hidden">
+                    <img src="cam.png" alt="Achievements" class="w-full h-[50%] object-cover opacity-60" />
+                    <ul
+                        class="absolute inset-0 flex flex-col justify-center px-8 space-y-4 text-white font-semibold text-lg">
+                        <li>• Featured in Professional Magazine (2024)</li>
+                        <li>• Winner – Regional Portrait Photography Award (2023)</li>
+                        <li>• Client Choice Award – Wedding Wire (2022–2024)</li>
+                    </ul>
+                </div>
+
+                <ul class="w-1/2 list-disc list-inside space-y-4 text-2xl mt-[10%]">
+                    <li>Professional Photographers of India (PPI)</li>
+                    <li>International Association of Photography &amp; Digital Arts</li>
+                    <li>Local Photography Collective – Board Member</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- last section -->
+    <section id="connect" class="relative w-full h-screen mt-[5%] bg-white overflow-hidden">
+        <div class="absolute inset-y-0 left-0 w-[30%] h-full pointer-events-none">
+            <img src="last.png" alt="Decorative blob" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative flex items-center justify-end h-full pr-16 mr-[15%]">
+            <form class="w-full max-w-sm space-y-6">
+                <input type="text" placeholder="Full-name"
+                    class="w-full rounded-xl bg-[#6B6655] p-4 font-marhey text-[#5A3921] placeholder-[#5A3921]/70 focus:outline-none" />
+
+                <input type="email" placeholder="Email-id"
+                    class="w-full rounded-xl bg-[#6B6655] p-4 font-marhey text-[#5A3921] placeholder-[#5A3921]/70 focus:outline-none" />
+
+                <input type="url" placeholder="Company-url"
+                    class="w-full rounded-xl bg-[#6B6655] p-4 font-marhey text-[#5A3921] placeholder-[#5A3921]/70 focus:outline-none" />
+
+                <textarea rows="4" placeholder="Your message"
+                    class="w-full rounded-2xl bg-[#6B6655] p-4 font-marhey text-[#5A3921] placeholder-[#5A3921]/70 focus:outline-none resize-none"></textarea>
+
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="rounded-full px-8 py-3 bg-gradient-to-br from-[#ECDCC3] to-[#A99472] font-marhey text-[#5A3921] shadow-md hover:opacity-90 transition">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

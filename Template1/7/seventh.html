@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Resume Builder- Languages</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+    input[type="color"]::-webkit-color-swatch { border: none; border-radius: 9999px; }
+    input[type="color"] {
+      appearance: none;
+      background: rgb(247,191,181);
+      border-radius: 9999px;
+      width: 1.25rem; height: 1.25rem;
+      border: 2px solid #d1d5db;
+      padding: 0;
+    }
+  </style>
+  <script defer>
+    function updateLanguagePreview() {
+      const lang1 = document.getElementById("inputLanguage1").value;
+      const lvl1 = document.getElementById("inputLanguageLevel1").value;
+      document.getElementById("language1").textContent = lang1;
+      document.getElementById("languageLevel1").textContent = lvl1;
+
+      const lang2 = document.getElementById("inputLanguage2").value;
+      const lvl2 = document.getElementById("inputLanguageLevel2").value;
+      document.getElementById("language2").textContent = lang2;
+      document.getElementById("languageLevel2").textContent = lvl2;
+    }
+    function changeResumeColor(color) {
+      document.getElementById("resumeBox").style.color = color;
+    }
+  </script>
+</head>
+
+<body class="font-sans bg-gray-100">
+  <div class="flex min-h-screen">
+
+    <!-- SIDEBAR -->
+    <div class="m-4 w-[15%] min-w-[200px] bg-gradient-to-b from-pink-600 to-pink-400 text-white rounded-xl py-6 px-2 flex flex-col items-center">
+      <ul class="relative z-10 flex flex-col space-y-8">
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 text-white font-bold text-xs flex items-center justify-center z-10">
+              1</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Personal Details</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 text-white font-bold text-xs flex items-center justify-center z-10">
+              2</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step font-bold">Work Experience</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 text-white font-bold text-xs flex items-center justify-center z-10">
+              3</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Education</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              4</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Projects</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              5</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Certifications</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              6</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Skills</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 bg-white text-pink-600 font-bold text-xs flex items-center justify-center z-10">
+              7</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Languages</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              8</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Professional Summary</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              9</div>
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 w-0 h-8 border-l-2 border-dashed border-white z-0">
+            </div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Publications</span>
+        </li>
+        <li class="flex items-start relative">
+          <div class="flex flex-col items-center mr-2 relative">
+            <div
+              class="w-6 h-6 rounded-full border-2 border-white text-white font-bold text-xs flex items-center justify-center z-10">
+              10</div>
+          </div><span class="pt-[2px] z-10 sidebar-step">Awards</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MIDDLE SECTION: LANGUAGES FORM -->
+    <div class="w-[50%] p-10 min-h-[800px] overflow-y-auto">
+      <h1 class="text-4xl font-bold mb-2">Languages</h1>
+      <p class="mb-6 text-gray-600">Include other languages if it's relevant to the job.</p>
+
+      <div class="bg-white shadow-md rounded-xl p-6 space-y-6">
+        <h2 class="text-2xl font-bold">Known Languages</h2>
+        <p class="text-gray-500 italic text-sm">Select languages from the dropdown.</p>
+        <hr class="border-gray-200"/>
+
+        <!-- Language Entry 1 -->
+        <div class="grid grid-cols-2 gap-6 items-end">
+          <div>
+            <label class="block mb-1 font-semibold">Language</label>
+            <select id="inputLanguage1" oninput="updateLanguagePreview()" class="w-full border px-4 py-2 rounded-lg">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>French</option>
+              <option>Spanish</option>
+              <option>Chinese</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold">Language Level</label>
+            <select id="inputLanguageLevel1" oninput="updateLanguagePreview()" class="w-full border px-4 py-2 rounded-lg">
+              <option>Basic</option>
+              <option>Intermediate</option>
+              <option>Fluent</option>
+              <option>Native</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Language Entry 2 -->
+        <div class="grid grid-cols-2 gap-6 items-end">
+          <div>
+            <label class="block mb-1 font-semibold">Language</label>
+            <select id="inputLanguage2" oninput="updateLanguagePreview()" class="w-full border px-4 py-2 rounded-lg">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>French</option>
+              <option>Spanish</option>
+              <option>Chinese</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold">Language Level</label>
+            <select id="inputLanguageLevel2" oninput="updateLanguagePreview()" class="w-full border px-4 py-2 rounded-lg">
+              <option>Basic</option>
+              <option>Intermediate</option>
+              <option>Fluent</option>
+              <option>Native</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <button class="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition">
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-8">
+        <button class="px-6 py-2 bg-gray-300 text-gray-800 rounded-full font-semibold hover:bg-gray-400 transition">
+          &larr; Go Back
+        </button>
+        <button class="px-6 py-2 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition">
+          Next &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT PREVIEW PANEL -->
+    <div class="w-[35%] p-6">
+      <div class="bg-gray-100  p-4 mb-4">
+        <h4 class="text-center font-semibold text-sm mb-2">Choose Color</h4>
+        <div class="flex justify-center items-center space-x-2">
+          <button onclick="changeResumeColor('#1D4ED8')" class="w-5 h-5 rounded-full bg-blue-700"></button>
+          <button onclick="changeResumeColor('#16A34A')" class="w-5 h-5 rounded-full bg-green-600"></button>
+          <button onclick="changeResumeColor('#0891B2')" class="w-5 h-5 rounded-full bg-cyan-600"></button>
+          <button onclick="changeResumeColor('#FACC15')" class="w-5 h-5 rounded-full bg-yellow-400"></button>
+          <button onclick="changeResumeColor('#FB923C')" class="w-5 h-5 rounded-full bg-orange-400"></button>
+          <button onclick="changeResumeColor('#EC4899')" class="w-5 h-5 rounded-full bg-pink-400"></button>
+          <button onclick="changeResumeColor('#7C3AED')" class="w-5 h-5 rounded-full bg-purple-700"></button>
+          <input type="color" onchange="changeResumeColor(this.value)" value="#f7bfb5" />
+        </div>
+      </div>
+      <div class="pb-4 mb-4 border-b border-black">
+
+      </div>
+      <div class="text-center font-bold text-sm mb-2">
+        NOTE: Kindly scroll down to view the complete resume.
+      </div>
+
+      <div id="resumeBox" class="bg-white shadow-md rounded p-6 overflow-y-auto max-h-[calc(100vh-150px)]">
+
+        <!-- Name & Contact -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h2 id="resumeName" class="text-2xl font-bold text-center">Your Name</h2>
+          <p id="resumeContact" class="text-sm text-center">Your Location | Phone | Email</p>
+          <p class="text-sm text-center">
+            LinkedIn: <span id="resumeLinkedin">—</span> | GitHub: <span id="resumeGithub">—</span>
+          </p>
+        </div>
+        <div class=" -mt-3 border-b border-black">
+          
+        </div>
+        <!-- Professional Summary -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Professional Summary</h3>
+          <p id="resumeSummary" class="text-sm mt-1">
+            Your professional summary will be finely crafted and updated here at the final stage.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Skills</h3>
+          <div id="resumeSkills" class="grid grid-cols-2 gap-2 text-sm mt-2">
+            <ul class="list-disc ml-6 space-y-1">
+              <li id="skill1">Database Development</li>
+              <li id="skill2">React</li>
+            </ul>
+            <ul class="list-disc ml-6 space-y-1">
+              <li id="skill3">Cloud Services</li>
+              <li id="skill4">Node.js</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Work Experience</h3>
+          <p class="text-sm mt-2">
+            <span id="companyName" class="font-bold">Company</span><br>
+            <span id="jobTitle">Role</span>, <span id="city">City</span>, <span id="state">State</span>, <span
+              id="country">Country</span><br>
+            <span id="startMonth">Start Month</span> <span id="startYear">Start Year</span> –
+            <span id="endMonth">End Month</span> <span id="endYear">End Year</span><br>
+            <span id="jobDuties">Description</span>
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Education</h3>
+          <p class="text-sm mt-2">
+            <span id="courseName">Course Name</span><br>
+            <span id="collegeName">College Name</span><br>
+            <span id="courseDuration">Course Duration</span>, <span id="educationLevel">Education Level</span><br>
+            Completed: <span id="completionMonth">Month</span> <span id="completionYear">Year</span>
+          </p>
+        </div>
+
+        <!-- Projects -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Projects</h3>
+          <p class="text-sm mt-2">
+            <span id="projectTitle">Project Title</span><br>
+            <a id="projectLink" href="#" target="_blank" class="text-blue-600 underline">Project Link</a><br>
+            <span id="projectCompletionMonth">Month</span> <span id="projectCompletionYear">Year</span><br>
+            <span id="projectDescription">Project Description</span>
+          </p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="pb-4 mb-4 border-b border-black">
+          <h3 class="font-semibold text-lg text-center">Certifications</h3>
+          <ul class="list-disc ml-6 text-sm space-y-1 mt-2">
+            <li><span id="certification1">License or Certification</span> - <span id="certificationYear1">Year</span>
+            </li>
+            <li><span id="certification2">License or Certification</span> - <span id="certificationYear2">Year</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div>
+          <h3 class="font-semibold text-lg text-center">Languages</h3>
+          <ul class="list-disc ml-6 text-sm space-y-1 mt-2">
+            <li><span id="language1">English</span> - <span id="languageLevel1">Fluent</span></li>
+            <li><span id="language2">Hindi</span> - <span id="languageLevel2">Fluent</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Marck+Script&family=Marmelad&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        .font-marck {
+            font-family: 'Marck Script', cursive;
+        }
+
+        .font-marmelad {
+            font-family: 'Marmelad', sans-serif;
+        }
+
+        .font-markazi {
+            font-family: 'Markazi Text', serif;
+        }
+
+        .ellipse-bg {
+            position: absolute;
+            background-color: #FFF8F6;
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            top: 50%;
+            left: 72%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex h-screen">
+        <!-- LEFT PANEL -->
+        <div class="w-[25%] bg-[#F7EEEF] flex flex-col items-center py-16 space-y-8">
+            <h1 class="font-marck text-6xl mt-[10%]">Elsa</h1>
+
+            <nav class="flex flex-col space-y-6 text-2xl mt-[15%] font-markazi">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+            </nav>
+
+            <button class="mt-auto mb-8 px-8 py-2 rounded-xl font-markazi text-2xl" style="
+            background: linear-gradient(
+              180deg,
+              rgba(166,146,146,0.9) 0%,
+              rgba(213,175,175,0.7) 100%
+            );
+          ">
+                Explore
+            </button>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="relative flex-1 overflow-hidden">
+            <div class="ellipse-bg"></div>
+
+            <div class="relative z-10 flex flex-col justify-center h-full px-24">
+                <div>
+                    <h2 class="font-marmelad text-6xl tracking-wide">
+                        GRAPHIC
+                        <br />
+                        DESIGNER
+                    </h2>
+                    <div class="w-34 h-1 bg-[#DC0D17] mt-2"></div>
+                </div>
+                <p class="font-marmelad text-gray-600 mt-6 leading-relaxed max-w-md">
+                    I craft compelling visual experiences that<br />
+                    connect brands with their audiences.<br />
+                    From logo design to complete brand<br />
+                    identities, I transform concepts into<br />
+                    stunning visual stories.
+                </p>
+            </div>
+            <img src="girl.png" alt="Designer portrait" class="absolute right-0 bottom-0 h-[80%] z-10 object-cover" />
+        </div>
+
+    </section>
+    <div class="border-4 border-black w-[100%] mx-auto mb-0"></div>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="relative h-screen py-24 bg-cover bg-center" style="background-image: url('bg.png');">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-marmelad text-6xl text-gray-900 mb-8">
+                About me
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="font-marmelad text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto mt-[5%] mb-12">
+                &#34;I’m a graphic designer who believes that great design goes beyond aesthetics—it
+                communicates, inspires, and creates connections. With over 5 years in the industry,
+                I’ve had the privilege of working with diverse clients, from innovative startups to
+                established brands. My approach combines strategic thinking with creative execution.
+                I don’t just make things look beautiful; I ensure they serve a purpose and resonate
+                with the intended audience. Whether it’s crafting a complete brand identity or
+                designing a single poster, I’m committed to delivering work that makes an impact.
+                When I’m not designing, you can find me exploring art galleries, experimenting with
+                new design trends, or enjoying a good cup of coffee while sketching ideas.&#34;
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex justify-center space-x-6 ml-[20%]">
+                <a href="#" aria-label="Instagram">
+                    <img src="in.webp" alt="Instagram" class="h-8 w-8" />
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <img src="LinkedIn_icon.svg.png" alt="LinkedIn" class="h-8 w-8" />
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="Twitter.svg" alt="Twitter" class="h-8 w-8" />
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="border-4 border-black w-[100%] mx-auto mb-0"></div>
+
+    <!-- EXPERIENCE & SERVICES SECTION -->
+    <section id="experience" class="py-16 px-6 h-screen bg-white">
+        <!-- Section Title -->
+        <h2 class="font-marmelad text-5xl text-center text-black mb-12">
+            My Experience and Services
+        </h2>
+
+        <!-- CARDS ROW -->
+        <div
+            class="flex flex-col md:flex-row justify-center items-stretch space-y-6 md:space-y-0 md:space-x-10 mb-8 mt-[5%]">
+            <!-- Card 1 -->
+            <div class="bg-[#F2CABB] border-4 font-marmelad border-[#C16078] rounded-lg p-6 flex-1 max-w-sm">
+                <h3 class="font-semibold text-lg mb-1">Senior Graphic Designer</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Creative Studios Inc. | 2022 – Present
+                </p>
+                <p class="text-gray-800">
+                    Lead designer for 15+ brand identity projects, increasing client satisfaction by 30%
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-[#F2CABB] border-4 font-marmelad border-[#C16078] rounded-lg p-6 flex-1 max-w-sm">
+                <h3 class="font-semibold text-lg mb-1">Senior Graphic Designer</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Creative Studios Inc. | 2022 – Present
+                </p>
+                <p class="text-gray-800">
+                    Lead designer for 15+ brand identity projects, increasing client satisfaction by 30%
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-[#F2CABB] border-4 font-marmelad border-[#C16078] rounded-lg p-6 flex-1 max-w-sm">
+                <h3 class="font-semibold text-lg mb-1">Senior Graphic Designer</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Creative Studios Inc. | 2022 – Present
+                </p>
+                <p class="text-gray-800">
+                    Lead designer for 15+ brand identity projects, increasing client satisfaction by 30%
+                </p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-3 border-[#FFDBE4] w-[80%] mx-auto mb-8"></div>
+
+        <!-- SERVICES LIST -->
+        <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-4 mt-[3%] gap-x-20">
+            <!-- Left Column -->
+            <div class="space-y-4 -ml-[50%]">
+                <div class="flex items-center">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#FFDEE6] rounded-full mr-3">
+                        <span class="w-4 h-4 bg-[#D9BAA4] rounded-full"></span>
+                    </span>
+                    <span class="text-3xl text-black">Digital Design</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#FFDEE6] rounded-full mr-3">
+                        <span class="w-4 h-4 bg-[#D9BAA4] rounded-full"></span>
+                    </span>
+                    <span class="text-3xl text-black">Packaging Design</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#FFDEE6] rounded-full mr-3">
+                        <span class="w-4 h-4 bg-[#D9BAA4] rounded-full"></span>
+                    </span>
+                    <span class="text-3xl text-black">Consultation &amp; Strategy Design</span>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#FFDEE6] rounded-full mr-3">
+                        <span class="w-4 h-4 bg-[#D9BAA4] rounded-full"></span>
+                    </span>
+                    <span class="text-3xl text-black">Brand Identity Design</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#FFDEE6] rounded-full mr-3">
+                        <span class="w-4 h-4 bg-[#D9BAA4] rounded-full"></span>
+                    </span>
+                    <span class="text-3xl text-black">Print Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="border-4 border-black w-[100%] mx-auto mb-0"></div>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="relative py-16 h-screen px-6"
+        style="background-image: url('bg2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <h2 class="font-marmelad text-5xl text-center text-black mb-12">
+            Projects
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- LEFT -->
+            <div class="space-y-10">
+                <div class="rounded-xl overflow-hidden h-62 bg-gray-100">
+                    <img src="p1.png" alt="Project image" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden h-62 bg-gray-100">
+                    <img src="p2.png" alt="Project image" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- MIDDLE -->
+            <div class="relative rounded-xl overflow-hidden h-134 bg-white">
+                <img src="p3.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+
+                <div class="relative z-10 flex flex-col justify-between h-full p-6">
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#D9BAA4] rounded-full mr-3"></span>
+                            <span class="font-marmelad text-lg text-black">Dessert cafe identity</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#FFDEE6] rounded-full mr-3"></span>
+                            <span class="font-marmelad text-lg text-black">Artesian Bakery Identity</span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#FFDEE6] rounded-full mr-3"></span>
+                            <span class="font-marmelad text-lg text-black">Harvest &amp; Hearth</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="inline-block w-4 h-4 bg-[#D9BAA4] rounded-full mr-3"></span>
+                            <span class="font-marmelad text-lg text-black">NexaTech Solutions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT-->
+            <div class="space-y-10">
+                <div class="rounded-xl overflow-hidden h-62 bg-gray-100">
+                    <img src="p4.png" alt="Project image" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden h-62 bg-gray-100">
+                    <img src="p5.png" alt="Project image" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="border-4 border-black w-[100%] mx-auto mb-0"></div>
+
+    <!-- EDUCATION AND CONTACT SECTION -->
+<section class="py-16 px-6 bg-white">
+  <h2 class="font-marmelad text-4xl text-center mb-10">My Education</h2>
+
+  <div class="flex flex-col md:flex-row justify-center gap-12 mb-8">
+    <div class="bg-[#F2CABB] border-3 border-[#C16078] rounded-lg p-6 w-64 text-center">
+      <p class="font-semibold">Name of University</p>
+      <p class="text-gray-700">Professional</p>
+      <p class="text-gray-700">2009-2015</p>
+    </div>
+    <div class="bg-[#F2CABB] border-3 border-[#C16078] rounded-lg p-6 w-64 text-center">
+      <p class="font-semibold">Name of University</p>
+      <p class="text-gray-700">Professional</p>
+      <p class="text-gray-700">2009-2015</p>
+    </div>
+    <div class="bg-[#F2CABB] border-3 border-[#C16078] rounded-lg p-6 w-64 text-center">
+      <p class="font-semibold">Name of University</p>
+      <p class="text-gray-700">Professional</p>
+      <p class="text-gray-700">2009-2015</p>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-3 border-[#FFDBE4] w-2/3 mx-auto mb-10"></div>
+
+  <h2 class="font-marmelad text-3xl text-center mb-8">Get In Touch</h2>
+
+  <!-- Contact Form -->
+  <form class="max-w-2xl mx-auto space-y-4">
+    <input
+      type="text"
+      placeholder="Full Name"
+      class="w-full p-3 bg-[#F2CABB] border border-[#C16078] rounded-lg placeholder-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+    />
+    <input
+      type="email"
+      placeholder="Email-id"
+      class="w-full p-3 bg-[#F2CABB] border border-[#C16078] rounded-lg placeholder-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+    />
+    <input
+      type="text"
+      placeholder="Company-url"
+      class="w-full p-3 bg-[#F2CABB] border border-[#C16078] rounded-lg placeholder-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+    />
+    <textarea
+      rows="4"
+      placeholder="Your Message"
+      class="w-full p-3 bg-[#F2CABB] border border-[#C16078] rounded-lg placeholder-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+    ></textarea>
+    <button
+      type="submit"
+      class="bg-[#C16078] text-white px-6 py-2 rounded-lg hover:bg-[#a24d62]"
+    >
+      Send
+    </button>
+  </form>
+</section>
+
+</body>
+
+</html>
