@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;600&family=Marko+One&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&family=Marko+One&display=swap"
+        rel="stylesheet" />
+    <style>
+        .font-inria {
+            font-family: 'Inria Sans', sans-serif;
+        }
+
+        .font-marko {
+            font-family: 'Marko One', cursive;
+        }
+
+        .font-markazi {
+            font-family: 'Markazi Text', serif;
+        }
+
+        .font-marko {
+            font-family: 'Marko One', cursive;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <section class="relative overflow-hidden bg-[#003D3D] min-h-screen">
+        <div class="absolute -left-40 top-1/4 w-[400px] h-[400px] rounded-full"
+            style="background-color:#95E96E85; filter:blur(400px);"></div>
+        <div class="absolute left-1/2 top-0 w-[400px] h-[400px] rounded-full -translate-x-1/2"
+            style="background-color:#3D648C; filter:blur(400px);"></div>
+        <div class="absolute -right-40 bottom-1/4 w-[400px] h-[400px] rounded-full"
+            style="background-color:#80FFF78F; filter:blur(400px);"></div>
+
+        <nav
+            class="absolute top-0 w-full flex items-center justify-center space-x-8 py-6 font-inria text-white text-lg">
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#skills" class="hover:underline">Skills</a>
+            <a href="#experience" class="hover:underline">Experience</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#education" class="hover:underline">Education</a>
+            <button
+                class="absolute right-15 font-inria text-black px-2 py-1 rounded-md border-5 bg-white border-[#D8D67F] hover:bg-[#D8D67F] hover:text-black transition">
+                Explore More
+            </button>
+        </nav>
+
+        <div class="relative z-10 container mx-auto px-6 py-32 flex flex-col-reverse md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 flex flex-col items-center">
+                <div
+                    class="w-1/2 h-[20px] z-1 translate-y-10 border bg-[#8EB9C317] rounded-xl border-white border-opacity-20 mb-2">
+                </div>
+                <div
+                    class="w-7/10 h-[20px] z-10 translate-y-6 border bg-[#537B84] rounded-xl border-white border-opacity-60 mb-4">
+                </div>
+                <img src="girll.png" alt="Hero" class="rounded-2xl z-20 w-9/12 h-[450px]" />
+            </div>
+            <div class="w-full md:w-1/2 text-white">
+                <p class="font-inria text-[#D8D67F] text-xl ml-2 uppercase mb-2">
+                    Upasana Raj
+                </p>
+                <h1 class="font-marko text-5xl md:text-6xl leading-tight mb-6">
+                    Software Engineer<br />and Developer
+                </h1>
+                <p class="font-inria text-[#D8D67F] text-base leading-relaxed max-w-md mb-8">
+                    I'm a results-driven CEO with over 15 years of experience building and
+                    scaling high-growth companies across diverse industries. My journey
+                    began in engineering.
+                </p>
+                <button
+                    class="font-inria text-black bg-white px-8 py-2 rounded-md border-5 border-[#D8D67F] hover:bg-[#D8D67F] hover:text-black transition">
+                    Download CV
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="bg-white py-16 h-screen">
+        <!-- Outer box with your BG image -->
+        <div class="relative mx-auto max-w-4xl h-155 bg-cover bg-center rounded-lg overflow-hidden"
+            style="background-image: url('bg4.png') ;">
+            <!-- Inner white card -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="bg-white bg-opacity-90 p-8 rounded-md shadow-lg max-w-2xl text-center">
+                    <!-- Heading -->
+                    <h2 class="font-marko text-5xl text-[#05403C] mb-4">
+                        About Me
+                    </h2>
+                    <!-- Paragraph -->
+                    <p class="text-gray-800 text-xl leading-relaxed mb-6">
+                        I’m a results-driven CEO with over 15 years of experience building and
+                        scaling high-growth companies across diverse industries. My journey began
+                        in engineering, where I developed a deep appreciation for systematic
+                        problem-solving and data-driven decision making. This technical
+                        foundation, combined with advanced business training, has enabled me to
+                        bridge the gap between innovation and execution.
+                    </p>
+                    <div class="flex justify-center space-x-4 ml-[60%]">
+                        <img src="i1.jpeg" alt="Icon 1" class="w-9 h-9" />
+                        <img src="i2.jpeg" alt="Icon 2" class="w-10 h-10" />
+                        <img src="i3.jpeg" alt="Icon 3" class="w-10 h-10" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#013026] py-16 font-markazi text-white">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Skills -->
+            <h2 class="font-marko text-4xl text-center mb-12">Skills</h2>
+            <div class="flex justify-center space-x-20 mb-16">
+                <!-- React – 95% -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 p-2 rounded-full"
+                        style="background: conic-gradient(#3BA354 0% 95%, white 95% 100%);">
+                        <div class="w-full h-full bg-[#013026] rounded-full flex items-center justify-center">
+                            <span class="text-4xl font-semibold">95%</span>
+                        </div>
+                    </div>
+                    <p class="mt-2">React</p>
+                </div>
+
+                <!-- Node.js – 45% -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 p-2 rounded-full"
+                        style="background: conic-gradient(#3BA354 0% 45%, white 45% 100%);">
+                        <div class="w-full h-full bg-[#013026] rounded-full flex items-center justify-center">
+                            <span class="text-4xl font-semibold">45%</span>
+                        </div>
+                    </div>
+                    <p class="mt-2">Node.js</p>
+                </div>
+
+                <!-- MongoDB – 100% -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 p-2 rounded-full"
+                        style="background: conic-gradient(#3BA354 0% 100%, white 100% 100%);">
+                        <div class="w-full h-full bg-[#013026] rounded-full flex items-center justify-center">
+                            <span class="text-4xl font-semibold">100%</span>
+                        </div>
+                    </div>
+                    <p class="mt-2">MongoDB</p>
+                </div>
+
+                <!-- AWS – 45% -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 p-2 rounded-full"
+                        style="background: conic-gradient(#3BA354 0% 45%, white 45% 100%);">
+                        <div class="w-full h-full bg-[#013026] rounded-full flex items-center justify-center">
+                            <span class="text-4xl font-semibold">45%</span>
+                        </div>
+                    </div>
+                    <p class="mt-2">AWS</p>
+                </div>
+
+                <!-- Postman – 95% -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 p-2 rounded-full"
+                        style="background: conic-gradient(#3BA354 0% 95%, white 95% 100%);">
+                        <div class="w-full h-full bg-[#013026] rounded-full flex items-center justify-center">
+                            <span class="text-4xl font-semibold">95%</span>
+                        </div>
+                    </div>
+                    <p class="mt-2">Postman</p>
+                </div>
+            </div>
+
+            <h2 class="font-marko text-4xl text-center mb-4 -mt-2">Work Experience</h2>
+            <div class="mx-auto w-3/3 h-[2px] bg-white mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-markazi font-semibold">
+                        Senior Full-Stack Developer
+                    </h3>
+                    <p class="text-3xl mb-4 font-markazi">March 2022 – Present</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-semibold">
+                        TechFlow Solutions
+                    </h3>
+                    <p class="text-3xl font-markazi mb-2">
+                        Lead development of enterprise‑level web applications serving 50K+ daily users.
+                    </p>
+                    <p class="text-xl flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a6 6 0 00-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 00-6-6z" />
+                        </svg>
+                        New York
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-markazi font-semibold">
+                        Senior Full-Stack Developer
+                    </h3>
+                    <p class="text-3xl mb-4 font-markazi">March 2022 – Present</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-semibold">
+                        TechFlow Solutions
+                    </h3>
+                    <p class="text-3xl font-markazi mb-2">
+                        Lead development of enterprise‑level web applications serving 50K+ daily users.
+                    </p>
+                    <p class="text-xl flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a6 6 0 00-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 00-6-6z" />
+                        </svg>
+                        New York
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-markazi font-semibold">
+                        Senior Full-Stack Developer
+                    </h3>
+                    <p class="text-3xl mb-4 font-markazi">March 2022 – Present</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl text-[#3BA354] font-semibold">
+                        TechFlow Solutions
+                    </h3>
+                    <p class="text-3xl font-markazi mb-2">
+                        Lead development of enterprise‑level web applications serving 50K+ daily users.
+                    </p>
+                    <p class="text-xl flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a6 6 0 00-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 00-6-6z" />
+                        </svg>
+                        New York
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section4 -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-marko text-4xl text-center mb-12">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <!-- white box -->
+                    <div class="h-48 border-10 border-[#3BA354]  bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-[#00242C] mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 border-10 border-[#3BA354] bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-white mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 border-10 border-[#3BA354] bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-white mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 border-10 border-[#3BA354] bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-white mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 border-10 border-[#3BA354] bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-white mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#3BA354] rounded-xl overflow-hidden shadow-lg flex flex-col">
+                    <div class="h-48 border-10 border-[#3BA354] bg-white"></div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-marko text-lg text-white mb-2">Lorem Lipsum</h3>
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class="flex-1 text-center py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#3BA354] transition">
+                                GitHub
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center py-2 bg-[#00242C] rounded-md text-white font-semibold hover:bg-opacity-90 transition">
+                                Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <h2 class="font-marko text-4xl text-center mb-8">Education</h2>
+            <div class="relative max-w-2xl mx-auto pl-6 -ml-[10%] -mt-[2%]">
+                <div class="absolute left-6.5 top-6 bottom-0 w-1 h-[34%] bg-[#3BA354]"></div>
+                <div class="absolute left-6.5 top-38 bottom-0 w-1 h-[34%] bg-[#3BA354]"></div>
+
+                <div class="relative mb-10">
+                    <div
+                        class="absolute -left-2 top-0 w-6 h-6 rounded-full bg-[#3BA354] flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-white"></div>
+                    </div>
+                    <div class="ml-8">
+                        <p class="font-marko text-2xl text-[#05403C]">Columbia University | 2016–2020</p>
+                        <p class="text-[#3BA354] font-marko italic">Bachelor of Arts – English Literature</p>
+                        <p class="text-gray-700 font-marko text-2xl">English Literature</p>
+                    </div>
+                </div>
+
+                <div class="relative mb-10">
+                    <div
+                        class="absolute -left-2 top-0 w-6 h-6 rounded-full bg-[#3BA354] flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-white"></div>
+                    </div>
+                    <div class="ml-8">
+                        <p class="font-marko text-2xl text-[#05403C]">Columbia University | 2016–2020</p>
+                        <p class="text-[#3BA354] font-marko italic">Bachelor of Arts – English Literature</p>
+                        <p class="text-gray-700 text-2xl font-marko">English Literature</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div
+                        class="absolute -left-2 top-0 w-6 h-6 rounded-full bg-[#3BA354] flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-white"></div>
+                    </div>
+                    <div class="ml-8">
+                        <p class="font-marko text-2xl text-[#05403C]">Columbia University | 2016–2020</p>
+                        <p class="text-[#3BA354] font-marko italic">Bachelor of Arts – English Literature</p>
+                        <p class="text-gray-700 font-marko text-2xl">English Literature</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 5-->
+<section id="contact" class="relative overflow-hidden bg-[#003D3D] min-h-screen">
+  <div class="absolute -left-40 top-1/4 w-[400px] h-[400px] rounded-full"
+       style="background-color:#95E96E85; filter:blur(400px);"></div>
+  <div class="absolute left-1/2 top-0 w-[400px] h-[400px] rounded-full -translate-x-1/2"
+       style="background-color:#3D648C; filter:blur(400px);"></div>
+  <div class="absolute -right-40 bottom-1/4 w-[400px] h-[400px] rounded-full"
+       style="background-color:#80FFF78F; filter:blur(400px);"></div>
+
+  <div class="relative z-10 container mx-auto px-6 py-32 flex flex-col items-center text-center space-y-8">
+    <h2 class="font-marko text-5xl text-white">Let’s Build Something epic</h2>
+    <p class="font-marko text-2xl text-[#3BA354] max-w-2xl">
+      Ready to turn your crazy ideas into scalable reality? Let’s chat.
+    </p>
+
+    <div class="w-full flex flex-col lg:flex-row gap-12 mt-5">
+      <div class="flex flex-col space-y-6 lg:w-2/10 ml-[10%]">
+        <div class="bg-[#3BA354] rounded-xl p-6 flex flex-col items-center space-y-2">
+          <svg class="w-6 h-6 text-[#00242C]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 2v.511l8 5.333 8-5.333V6H4zm16 12V8.489l-8 5.333-8-5.333V18h16z"/>
+          </svg>
+          <h3 class="font-marko text-xl text-[#00242C]">Email</h3>
+          <p class="text-white font-marko">sandipnarbatt11@gmail.com</p>
+          <a href="mailto:sandipnarbatt11@gmail.com"
+             class="font-marko text-white underline">send a message</a>
+        </div>
+
+        <div class="bg-[#3BA354] rounded-xl p-6 flex flex-col items-center space-y-2">
+          <svg class="w-6 h-6 text-[#00242C]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.672.149s-.772.967-.947 1.166c-.173.199-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.134.297-.347.446-.521.149-.174.199-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.672-1.612-.921-2.211-.242-.58-.487-.501-.672-.51l-.572-.01c-.198 0-.52.074-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.273-.198-.572-.347z"/>
+            <path d="M20.52 3.48A11.831 11.831 0 0012 .5C5.648.5.5 5.648.5 12c0 2.122.55 4.167 1.593 5.981L.5 23.5l5.603-1.462A11.832 11.832 0 0012 23.5c6.352 0 11.5-5.148 11.5-11.5 0-3.069-1.197-5.952-3.18-8.52zM12 21.5a9.42 9.42 0 01-4.785-1.32l-.342-.204-3.324.868.889-3.24-.223-.348A9.373 9.373 0 012.5 12c0-5.196 4.204-9.415 9.5-9.415S21.5 6.804 21.5 12 17.196 21.5 12 21.5z"/>
+          </svg>
+          <h3 class="font-marko text-xl text-[#00242C]">WhatsApp</h3>
+          <p class="text-white font-marko">+1 (234) 567-8901</p>
+          <a href="https://wa.me/12345678901" target="_blank"
+             class="font-marko text-white underline">send a message</a>
+        </div>
+
+        <div class="bg-[#3BA354] rounded-xl p-6 flex flex-col items-center space-y-2">
+          <svg class="w-6 h-6 text-[#00242C]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"/>
+            <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
+            <circle cx="17.5" cy="6.5" r="1.5"/>
+          </svg>
+          <h3 class="font-marko text-xl text-[#00242C]">Instagram</h3>
+          <p class="text-white font-marko">@yourhandle</p>
+          <a href="https://instagram.com/yourhandle" target="_blank"
+             class="font-marko text-white underline">send a message</a>
+        </div>
+      </div>
+      <form class="space-y-10 lg:w-1/2" action="#" method="POST">
+        <input type="text" name="name" placeholder="Full name"
+               class="w-full border-2 border-[#3BA354] rounded-lg px-6 py-5 bg-transparent text-white placeholder-white font-marko focus:outline-none focus:ring-2 focus:ring-[#3BA354]"/>
+        <input type="email" name="email" placeholder="Email id"
+               class="w-full border-2 border-[#3BA354] rounded-lg px-6 py-5 bg-transparent text-white placeholder-white font-marko focus:outline-none focus:ring-2 focus:ring-[#3BA354]"/>
+        <input type="url" name="company" placeholder="Company url"
+               class="w-full border-2 border-[#3BA354] rounded-lg px-6 py-5 bg-transparent text-white placeholder-white font-marko focus:outline-none focus:ring-2 focus:ring-[#3BA354]"/>
+        <textarea name="message" rows="6" placeholder="Your message"
+               class="w-full border-2 border-[#3BA354] rounded-lg px-6 py-5 bg-transparent text-white placeholder-white font-marko focus:outline-none focus:ring-2 focus:ring-[#3BA354]"></textarea>
+        <button type="submit"
+                class="mt-4 inline-block font-marko bg-[#3BA354] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+</body>
+
+</html>
