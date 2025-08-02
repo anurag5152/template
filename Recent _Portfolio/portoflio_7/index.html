@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: "Alexandria";
+      src: local("Alexandria"), url("/fonts/Alexandria.woff2") format("woff2");
+    }
+
+    .font-marko {
+      font-family: 'Marko One', cursive;
+    }
+
+    .font-alexandria {
+      font-family: "Alexandria", sans-serif;
+    }
+
+    .font-inknut {
+      font-family: "Inknut Antiqua", serif;
+    }
+
+    .font-aladin {
+      font-family: 'Aladin', cursive;
+    }
+
+    .font-edu {
+      font-family: 'Edu AU VIC WA NT Hand', cursive;
+    }
+
+    .font-jacques {
+      font-family: 'Jacques Francois Shadow', cursive;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header class="mt-4 px-4">
+    <nav class="max-w-7xl mx-auto bg-black rounded-full px-8 py-3 flex items-center justify-between font-inknut">
+      <a href="#" class="text-black bg-[#D76B12] font-alexandria rounded-full px-8 py-2 text-2xl font-bold">Logo</a>
+      <ul class="flex space-x-12 items-center text-white text-lg mr-[10%]">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Experience</a></li>
+        <img src="bx-home-smile 1.png" alt="" class="absolute top-4 left-[52%] w-8 h-auto mr-20 ml-20 border-2 bg-[#D76B12] " />
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative flex-1 flex flex-col items-center text-center font-alexandria px-4 overflow-hidden">
+
+    <!-- Intro: Hello + Heading -->
+    <div class="mt-10 z-20 text-center">
+      <div
+        class="text-[#D76B12] border border-[#D76B12] px-4 py-1 rounded-full text-sm font-semibold mb-3 inline-block">
+        Hello
+      </div>
+      <h1 class="text-5xl font-bold leading-snug">
+        I’m <span class="text-[#D76B12]">Priya</span><br />
+        Marketing Manager,
+      </h1>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-6 flex gap-4 z-20 translate-y-[600%] border-2 border-white px-4 py-2 rounded-full bg-white/20">
+      <a href="#portfolio"
+        class="px-6 py-2 border-4 bg-[#924A11] border-white rounded-full hover:bg-black hover:text-white transition">Portfolio</a>
+      <a href="#cv" class="px-6 py-2 bg-[#D76B12] text-white rounded-full hover:opacity-90 transition">Download CV</a>
+    </div>
+
+    <!-- Girl + Semicircle -->
+    <div class="relative w-full max-w-7xl flex-1 -mt-10 flex items-end justify-center">
+      <!-- Semicircle at bottom half -->
+      <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[650px] h-[350px] bg-[#D76B12] rounded-t-full z-0">
+      </div>
+
+      <!-- Girl Image -->
+      <img src="girl.png" alt="Priya" class="relative z-10 w-[750px] -mb-28" />
+    </div>
+
+    <!-- Experience & Description -->
+    <div class="absolute top-1/2 w-full max-w-6xl flex justify-between px-8 z-20 text-left -translate-y-1/2">
+      <!-- Left: Experience -->
+      <div class="flex items-center gap-4 -ml-[10%]">
+        <div class="text-[#D76B12] text-2xl">★★★★★</div>
+        <div>
+          <div class="text-xl font-bold">5+ Years</div>
+          <div class="text-sm">Experience</div>
+        </div>
+      </div>
+
+      <!-- Right: Short Text -->
+      <p class="text-sm max-w-md text-right leading-snug -mr-[10%]">
+        I'm a results-driven CEO with over 15 years of experience building and scaling high-growth
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section class=" min-h-screen relative bg-white py-24 overflow-hidden">
+    <!-- Decorative pattern placeholders -->
+    <img src="l1.png" alt="" class="absolute top-0 left-0 w-64 h-auto" />
+    <img src="l2.png" alt="" class="absolute left-0 bottom-0 w-64 h-auto" />
+    <img src="r1.png" alt="" class="absolute bottom-0 right-0 w-64 h-auto" />
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Section Title -->
+      <h2 class="font-aladin text-4xl md:text-5xl mb-8">
+        About <span class="text-[#D76B12]">Me</span>
+      </h2>
+
+      <!-- Content Box -->
+      <div class="bg-black border-8 border-black rounded-lg overflow-hidden">
+        <!-- White inner panel -->
+        <div class="bg-white p-8 text-left">
+          <p class="font-edu text-lg md:text-xl leading-relaxed text-gray-900">
+            Hi, I'm Sarah – a passionate photographer with over 6 years of experience capturing<br />
+            life's most precious moments. My journey began with a simple love for storytelling<br />
+            through images, and has evolved into a career dedicated to creating authentic,<br />
+            emotional photographs that stand the test of time.
+          </p>
+
+          <!-- Experience Line -->
+          <div class="mt-8 flex items-center">
+            <span class="inline-block w-8 h-8 mr-3 rounded-full border-4 border-[#D76B12]"></span>
+            <span class="font-jacques text-2xl text-gray-900">
+              5+ Years of experience
+            </span>
+          </div>
+        </div>
+
+        <!-- Footer bar with button & social -->
+        <div class="bg-black flex items-center justify-between px-6 py-4">
+          <a href="#work"
+            class="font-aladin bg-[#D76B12] text-black px-6 py-2 rounded-full inline-block hover:opacity-90">
+            View my work
+          </a>
+          <div class="flex space-x-4">
+            <img src="linkedin.png" alt="LinkedIn" class="w-5 h-5 border-2 border-[#DD843D]" />
+            <img src="insta.png" alt="Instagram" class="w-5 h-5 border-2 border-[#DD843D]" />
+            <img src="twitter.png" alt="Twitter" class="w-5 h-5 border-2 border-[#DD843D]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="min-h-screen relative py-20 bg-black text-white overflow-hidden"
+    style="background-image: url('bg.png'); background-size: cover; background-position: center;">
+    <!-- overlay if needed -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4">
+      <!-- Section heading -->
+      <h2 class="font-aladin text-4xl md:text-5xl text-white mb-4">
+        My <span class="text-[#D76B12]">Services</span>
+      </h2>
+      <p class="font-edu text-lg md:text-xl mb-12">
+        I'm a results-driven CEO with over 15 years of experience building and scaling high-growth companies across
+        diverse industries.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div class="flex flex-col items-center border-2 border-white rounded-lg p-6">
+          <h3 class="font-aladin text-xl mb-2 -mr-[20%] -ml-12">Website & App UX Improvements</h3>
+          <hr class="border-t border-white w-80 mb-4" />
+          <div class="relative w-full flex justify-center mt-12">
+            <div class="absolute -top-5 left-6 w-[85%] h-[200px] rounded-[20px] bg-[#A77C669E] z-0"
+              style="opacity: 0.62"></div>
+            <div class="absolute -top-3 left-4 w-[90%] h-[200px] rounded-[20px] bg-[#A29E9A] z-10"></div>
+            <div class="relative z-20 w-[95%] h-[200px] bg-gray-300 rounded-[20px] overflow-hidden">
+              <img src="c1.png" alt="UI/UX Design" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center border-2 border-white rounded-lg p-6">
+          <h3 class="font-aladin text-xl mb-2">User Research</h3>
+          <hr class="border-t border-white w-80 mb-4" />
+
+          <div class="relative w-full flex justify-center mt-12">
+            <div class="absolute -top-5 left-6 w-[85%] h-[200px] rounded-[20px] bg-[#A77C669E] z-0"
+              style="opacity: 0.62"></div>
+            <div class="absolute -top-3 left-4 w-[90%] h-[200px] rounded-[20px] bg-[#A29E9A] z-10"></div>
+            <div class="relative z-20 w-[95%] h-[200px] bg-gray-300 rounded-[20px] overflow-hidden">
+              <img src="c2.png" alt="UI/UX Design" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center border-2 border-white rounded-lg p-6">
+          <h3 class="font-aladin text-xl mb-2">Creative Design</h3>
+          <hr class="border-t border-white w-80 mb-4" />
+
+          <div class="relative w-full flex justify-center mt-12">
+            <div class="absolute -top-5 left-6 w-[85%] h-[200px] rounded-[20px] bg-[#A77C669E] z-0"
+              style="opacity: 0.62"></div>
+            <div class="absolute -top-3 left-4 w-[90%] h-[200px] rounded-[20px] bg-[#A29E9A] z-10"></div>
+            <div class="relative z-20 w-[95%] h-[200px] bg-gray-300 rounded-[20px] overflow-hidden">
+              <img src="c3.png" alt="UI/UX Design" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="min-h-screen relative py-20 bg-black text-white font-alexandria overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Title -->
+      <h2 class="font-aladin text-4xl md:text-5xl mb-12">
+        <span>Experience</span>
+      </h2>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center mt-15 -mb-10">
+        <!-- Card -->
+        <div
+          class="relative w-[400px] min-h-[400px] bg-black/50 border border-white rounded-2xl p-6 text-left backdrop-blur-md">
+          <!-- Top Text -->
+          <p class="text-xl mb-2 text-white font-inknut">2015–16 • Senior Software Eng.</p>
+          <h3 class="text-2xl font-bold text-white font-edu mb-4">NETFLIX</h3>
+
+          <!-- Description -->
+          <p class="text-white text-lg leading-relaxed font-edu mb-16">
+            I'm a results-driven CEO withover
+            15 years of experience building and
+            scalinghigh-growth companies
+            across diverse industries. My
+            journeybegan I'm a results-driven
+            CEO withover15 years of experience
+            building and scalinghigh-growth
+
+
+          </p>
+        </div>
+
+        <!-- Duplicate cards as needed -->
+        <div
+          class="relative w-[400px] min-h-[400px] bg-black/50 border border-white rounded-2xl p-6 text-left backdrop-blur-md">
+          <p class="text-xl mb-2 text-white font-inknut">2015–16 • Senior Software Eng.</p>
+          <h3 class="text-2xl font-bold text-white font-edu mb-4">NETFLIX</h3>
+          <p class="text-white text-lg leading-relaxed font-edu mb-16">
+            I'm a results-driven CEO withover
+            15 years of experience building and
+            scalinghigh-growth companies
+            across diverse industries. My
+            journeybegan I'm a results-driven
+            CEO withover15 years of experience
+            building and scalinghigh-growth
+
+
+          </p>
+        </div>
+
+        <div
+          class="relative w-[400px] min-h-[340px] bg-black/50 border border-white rounded-2xl p-6 text-left backdrop-blur-md">
+          <p class="text-xl mb-2 text-white font-inknut">2015–16 • Senior Software Eng.</p>
+          <h3 class="text-2xl font-bold text-white font-edu mb-4">NETFLIX</h3>
+          <p class="text-white text-lg leading-relaxed font-edu mb-16">
+            I'm a results-driven CEO withover
+            15 years of experience building and
+            scalinghigh-growth companies
+            across diverse industries. My
+            journeybegan I'm a results-driven
+            CEO withover15 years of experience
+            building and scalinghigh-growth
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW MARKETING IN ACTION SECTION -->
+  <section id="marketing-action" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-aladin text-4xl md:text-5xl mb-12"><span class="text-[#DD843D]">Marketing</span> In Action</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Card 1 -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <img src="m1.png" alt="Marketing Image 1" class="w-[90%] h-[auto] object-cover" />
+          <span
+            class="absolute border-2 border-white bottom-4 left-4 bg-[#924A11] text-white font-aladin px-4 py-1 rounded-md">Content
+            strategy for a website</span>
+        </div>
+        <!-- Card 2 -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <img src="m2.png" alt="Marketing Image 2" class="w-full h-auto object-cover" />
+          <span
+            class="absolute border-2 border-white bottom-4 left-4 bg-[#924A11] text-white font-aladin px-4 py-1 rounded-md">Social
+            media growth campaign</span>
+        </div>
+        <!-- Card 3 -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <img src="m3.png" alt="Marketing Image 3" class="w-full h-auto object-cover" />
+          <span
+            class="absolute border-2 border-white bottom-4 left-4 bg-[#924A11] text-white font-aladin px-4 py-1 rounded-md">Data
+            driven Dashboard</span>
+        </div>
+        <!-- Card 4 -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <img src="m4.png" alt="Marketing Image 4" class="w-full h-auto object-cover" />
+          <span
+            class="absolute border-2 border-white bottom-4 left-4 bg-[#924A11] text-white font-aladin px-4 py-1 rounded-md">Email
+            marketing automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="min-h-screen relative py-20 bg-cover bg-center"
+    style="background-image: url('bg.png'); z-index: -1;">
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Heading -->
+      <h2 class="font-aladin text-5xl md:text-6xl text-center text-[#DD843D] mb-12">
+        Education
+      </h2>
+
+      <!-- Timeline Container -->
+      <div class="relative">
+        <!-- Vertical dotted line -->
+        <div class="absolute left-5 top-1 z-2 bottom-0 w-0.5 h-[85%] border-l-2 border-dotted border-white"></div>
+
+        <!-- Entries -->
+        <ul class="space-y-16">
+          <!-- Item 1 -->
+          <li class="flex items-start">
+            <!-- Circle -->
+            <div class="flex-shrink-0 z-10 w-10 h-10 bg-[#DD843D] border-2 border-white rounded-full mt-1"></div>
+            <!-- Content -->
+            <div class="ml-6">
+              <h3 class="font-marko text-3xl text-white">
+                Columbia University | 2016–2020
+              </h3>
+              <p class="font-marko text-2xl text-[#DD843D]">
+                Bachelor of Arts – English Literature
+              </p>
+              <p class="font-marko text-3xl text-white">
+                English – Literature
+              </p>
+            </div>
+          </li>
+
+          <!-- Item 2 -->
+          <li class="flex items-start">
+            <div class="flex-shrink-0 z-10 w-10 h-10 bg-[#DD843D] border-2 border-white rounded-full mt-1"></div>
+            <div class="ml-6">
+              <h3 class="font-marko text-3xl text-white">
+                Columbia University | 2016–2020
+              </h3>
+              <p class="font-marko text-2xl text-[#DD843D]">
+                Bachelor of Arts – English Literature
+              </p>
+              <p class="font-marko text-3xl text-white">
+                English – Literature
+              </p>
+            </div>
+          </li>
+
+          <!-- Item 3 -->
+          <li class="flex items-start">
+            <div class="flex-shrink-0 z-10 w-10 h-10 bg-[#DD843D] border-2 border-white rounded-full mt-1"></div>
+            <div class="ml-6">
+              <h3 class="font-marko text-3xl text-white">
+                Columbia University | 2016–2020
+              </h3>
+              <p class="font-marko text-2xl text-[#DD843D]">
+                Bachelor of Arts – English Literature
+              </p>
+              <p class="font-marko text-3xl text-white">
+                English – Literature
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+<section id="contact" class="relative bg-black text-white py-20" style="background-image: url('bg.png'); background-size: cover; background-position: center;">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Heading -->
+    <h2 class="font-aladin text-4xl md:text-5xl text-center mb-12">
+      Contact <span class="text-[#DD843D]">us</span>
+    </h2>
+
+    <!-- Top Contact Methods -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center font-aladin">
+      <!-- WhatsApp -->
+      <div class="flex flex-col items-center space-y-2">
+        <img src="whatsapp.png" alt="WhatsApp" class="w-10 h-10 border bg-[#DD843D] rounded-full p-2" />
+        <p class="text-sm">call me at</p>
+        <p class="text-lg">+91 6578979989</p>
+      </div>
+      <!-- Email -->
+      <div class="flex flex-col items-center space-y-2">
+        <img src="email.png" alt="Email" class="w-10 h-10 border bg-[#DD843D] rounded-full p-2" />
+        <p class="text-sm">Email to:</p>
+        <p class="text-lg underline">alivehire@gmail.com</p>
+      </div>
+      <!-- Instagram/Text -->
+      <div class="flex flex-col items-center space-y-2">
+        <img src="insta2.png" alt="Instagram" class="w-10 h-10 border bg-[#DD843D] rounded-full p-2 "  />
+        <p class="text-sm">Text me at:</p>
+        <p class="text-lg underline">alivehire_57768</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Contact Form -->
+      <form class="space-y-4 font-aladin">
+        <input
+          type="text"
+          placeholder="Full-name"
+          class="w-full p-3 text-black rounded-md"
+        />
+        <input
+          type="email"
+          placeholder="Email-id"
+          class="w-full p-3 text-black rounded-md"
+        />
+        <input
+          type="url"
+          placeholder="Company-url"
+          class="w-full p-3 text-black rounded-md"
+        />
+        <textarea
+          rows="5"
+          placeholder="Your message"
+          class="w-full p-3 text-black rounded-md"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-[#DD843D] text-black px-6 py-2 font-aladin rounded-md hover:opacity-90 transition"
+        >
+          Send message
+        </button>
+      </form>
+
+      <!-- Map Embed -->
+      <div class="w-full h-80 bg-gray-800 rounded-md overflow-hidden">
+        <!-- replace src with your map/embed URL -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18…"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+</html>
