@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet" />
+
+    <title>Emma Watson - Graphic Designer</title>
+    <style>
+        #hero {
+            font-family: 'Inria Serif', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black overflow-x-hidden">
+    <section id="hero" class="bg-black text-white min-h-screen">
+        <div class="container mx-auto flex items-start justify-between px-8 py-16 min-h-screen">
+            <div class="w-1/2 flex flex-col">
+                <nav class="w-full">
+                    <ul class="flex justify-end space-x-12 text-2xl">
+                        <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                        <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+                        <li><a href="#experience" class="hover:text-gray-400">Experience</a></li>
+                        <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mt-16 space-y-4 ml-[10%]">
+                    <p class="uppercase mt-[10%] text-lg tracking-widest text-white">
+                        Hi There I’m
+                    </p>
+                    <h1 class="text-6xl font-bold -mt-[4%] leading-tight text-white">
+                        Emma Watson
+                    </h1>
+                    <h2 class="text-3xl text-white">
+                        A Professional<br />
+                        Graphic Designer
+                    </h2>
+                    <p class="text-sm max-w-md text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit est necessitatibus numquam nobis nam,
+                        perspiciatis accusamus placeat neque.
+                    </p>
+                    <button
+                        class="mt-6 inline-block px-8 py-3 border-2 border-black bg-white font-bold text-black rounded-lg text-3xl font-medium hover:bg-white hover:text-black transition-all duration-200">
+                        View Work
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-[40%] -mt-[5%] -mr-[5%] h-screen ">
+                <img src="girl.png" alt="Girl" class="object-cover w-full h-full" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class=" min-h-screen bg-black text-white font-serif py-16"
+        style="font-family:'Inria Serif', serif;">
+        <div class="container mx-auto px-8 space-y-6">
+            <div class="flex gap-6">
+
+                <div class="text-white translate-x-200 text-8xl -ml-[5%]">About Me</div>
+                <div class="flex-1 bg-white text-black rounded-2xl p-8 -ml-[26%]">
+                    <p class="text-center leading-relaxed mt-[15%]">
+                        I’m a results-driven CEO with over 15 years of experience
+                        building and scaling high-growth companies across diverse
+                        industries. My journey began in engineering, where I developed
+                        a deep appreciation for systematic problem-solving and
+                        data-driven decision making. This technical foundation,
+                        combined with advanced business training, has enabled me to
+                        bridge the gap between innovation and execution.
+                    </p>
+                </div>
+
+                <div
+                    class="flex-1 bg-white text-black rounded-2xl p-6 flex flex-col items-center justify-center mt-[10%]">
+                    <span class="text-9xl font-bold">30</span>
+                    <span class="mt-2 text-xl text-center">
+                        SATISFIED<br />CUSTOMERS
+                    </span>
+                </div>
+
+                <div class="flex-1 flex flex-col justify-between mt-[10%]">
+                    <div
+                        class="bg-white text-black rounded-2xl p-6 flex flex-col items-center justify-center flex-grow">
+                        <span class="text-7xl font-bold">5</span>
+                        <span class="mt-2 text-xl text-center">
+                            YEARS OF<br />EXPERIENCE
+                        </span>
+                    </div>
+                    <div class="h-6"></div>
+                    <div class="bg-white text-black rounded-2xl p-6 flex items-center justify-center">
+                        <button class="text-2xl font-semibold">
+                            Explore more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-6">
+                <div class="flex-[2] overflow-hidden rounded-2xl">
+                    <img src="building.png" alt="banner" class="w-full h-48 object-cover" />
+                </div>
+                <div class="flex-1 bg-white text-black rounded-2xl p-6 flex items-center justify-between">
+                    <span class="text-6xl font-semibold">
+                        DOWN<br />LODE CV
+                    </span>
+                    <span class="text-3xl border-2 border-black rounded-full rounded-full mr-[5%]">➔</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="min-h-screen bg-black text-white font-serif py-16"
+        style="font-family: 'Inria Serif', serif;">
+        <div class="container mx-auto px-8">
+            <h2 class="text-8xl font-bold text-center mb-22 ">
+                My Services
+            </h2>
+
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-20 mt-5 ">
+                <div class="w-full sm:w-[25%] h-80 rounded-2xl relative bg-cover bg-center" style="background-image: url('s1.png'); opacity: 20;">
+                    <div class="absolute inset-0 bg-opacity-50 p-8 flex flex-col justify-start rounded-2xl">
+                        <h3 class="text-2xl font-semibold mb-4">Digital Design</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Logo design</li>
+                            <li>Brand style guides (colors, typography)</li>
+                            <li>Business cards</li>
+                            <li>Brand refresh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[25%] h-80 rounded-2xl relative bg-cover bg-center"
+                    style="background-image: url('s2.png'); ">
+                    <div class="absolute inset-0 bg-opacity-50 p-8 flex flex-col justify-start rounded-2xl">
+                        <h3 class="text-3xl font-semibold mb-4">
+                            Branding &amp; Identity Design
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Logo design</li>
+                            <li>Brand style guides (colors, typography)</li>
+                            <li>Business cards</li>
+                            <li>Brand refresh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[25%] h-80 rounded-2xl relative bg-cover bg-center"
+                    style="background-image: url('s3.png') ;">
+                    <div class="absolute inset-0 bg-opacity-50 p-8 flex flex-col justify-start rounded-2xl">
+                        <h3 class="text-2xl font-semibold mb-4">Print Design</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Logo design</li>
+                            <li>Brand style guides (colors, typography)</li>
+                            <li>Business cards</li>
+                            <li>Brand refresh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="min-h-screen bg-black text-white font-serif py-16"
+        style="font-family: 'Inria Serif', serif;">
+        <div class="container mx-auto px-8 space-y-12">
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
+                <div class="w-full sm:w-1/3 bg-white text-black rounded-2xl p-8 mt-[5%]"
+                    style="font-family: 'Amarante', cursive;">
+                    <p class="text-2xl leading-snug">
+                        “Fuelled by curiosity.<br />
+                        I break things, fix them,<br />
+                        and learn faster that way.”
+                    </p>
+                </div>
+                <div class="w-full sm:w-2/3 flex items-center justify-center -ml-[12%]">
+                    <h2 class="text-6xl sm:text-8xl font-medium leading-tight text-right mt-5">
+                        My
+                    </h2>
+                    <h2
+                        class="text-6xl sm:text-8xl font-medium leading-tight text-right translate-y-30 -translate-x-33 ">
+                        Experience
+                    </h2>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 ">
+                <div class="flex-1 bg-white text-black rounded-2xl p-8">
+                    <div class="space-y-2">
+                        <span class="text-lg">2015–16 lorem</span>
+                        <h3 class="text-2xl font-semibold">NETFLIX</h3>
+                        <p class="text-sm leading-relaxed">
+                            I’m a results-driven CEO with over 15 years of experience
+                            building and scaling high-growth companies across diverse
+                            industries. My journey began… (your text here)
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 bg-white text-black rounded-2xl p-8">
+                    <div class="space-y-2">
+                        <span class="text-lg">2015–16 lorem</span>
+                        <h3 class="text-2xl font-semibold">NETFLIX</h3>
+                        <p class="text-sm leading-relaxed">
+                            I’m a results-driven CEO with over 15 years of experience
+                            building and scaling high-growth companies across diverse
+                            industries. My journey began… (your text here)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6">
+                <div class="flex-1 bg-white text-black rounded-2xl p-8">
+                    <div class="space-y-2">
+                        <span class="text-lg">2015–16 lorem</span>
+                        <h3 class="text-2xl font-semibold">NETFLIX</h3>
+                        <p class="text-sm leading-relaxed">
+                            I’m a results-driven CEO with over 15 years of experience
+                            building and scaling high-growth companies across diverse
+                            industries. My journey began… (your text here)
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 rounded-2xl overflow-hidden">
+                    <img src="e1.png" alt="Experience visual" class="w-full h-60 object-cover rounded-2xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WORKS SECTION -->
+    <section id="works" class="min-h-screen bg-black text-white font-serif py-16"
+        style="font-family:'Inria Serif', serif;">
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col sm:flex-row gap-8">
+                <div class="flex-1 flex flex-col">
+                    <h2 class="text-8xl font-bold mb-6">MY WORKS</h2>
+                    <div class="flex-1 rounded-2xl overflow-hidden">
+                        <img src="left.png" alt="Project 1" class="w-full h-110 object-cover" />
+                    </div>
+                </div>
+
+                <div class="flex-1 flex flex-col gap-6">
+                    <div class="rounded-2xl overflow-hidden flex-1">
+                        <img src="middleone.png" alt="Project 2" class="w-full h-78 object-cover" />
+                    </div>
+                    <div class="rounded-2xl overflow-hidden flex-1">
+                        <img src="middletwo.png" alt="Project 3" class="w-full h-78 object-cover" />
+                    </div>
+                </div>
+
+                <div class="flex-1 rounded-2xl overflow-hidden">
+                    <img src="right.png" alt="Project 4" class="w-full h-162 object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative min-h-screen bg-black text-white font-serif py-20"
+        style="font-family: 'Inria Serif', serif;">
+
+        <div class="absolute inset-0 overflow-hidden z-5">
+            <div
+                class="absolute top-[22px] left-[-100px] w-[350px] h-[350px] bg-gradient-to-br from-white/70 to-black rotate-105 rounded-full">
+            </div>
+            <div
+                class="absolute top-[28%] right-[2px] w-[500px] h-[500px] bg-gradient-to-br from-white/70 to-black rotate-105 rounded-full">
+            </div>
+            <div
+                class="absolute bottom-[25px] left-[25%] w-[150px] h-[150px] bg-gradient-to-br from-white/70 to-black rotate-105 rounded-full">
+            </div>
+            <div
+                class="absolute top-[5%] right-[10%] w-[80px] h-[80px] bg-gradient-to-br from-white/70 to-black rotate-105 rounded-full">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-8 flex flex-col lg:flex-row justify-between items-start gap-10 relative z-10">
+
+            <div class="flex flex-col space-y-8 w-full lg:w-1/3 mt-[7%] ml-[10%]">
+                <div class="bg-white text-black rounded-xl p-6 space-y-2 shadow-lg w-[60%]">
+                    <div class="flex items-center space-x-4">
+                        <img src="ema.png" alt="Email" class="w-6 h-6 -mt-6 ml-20">
+                        <h3 class="text-2xl text-center font-bold mt-5 -translate-x-15">Email</h3>
+                    </div>
+                    <p class="text-sm -mt-2">sandipnarbat111@gmail.com</p>
+                    <p class="text-xs text-center text-gray-700">send a message</p>
+                </div>
+
+                <div class="bg-white text-black rounded-xl p-6 space-y-2 shadow-lg w-[60%]">
+                    <div class="flex items-center space-x-4">
+                        <img src="wha.png" alt="Email" class="w-6 h-6 -mt-8 ml-20">
+                        <h3 class="text-2xl text-center font-bold mt-5 -translate-x-20">Whatsapp</h3>
+                    </div>
+                    <p class="text-sm -mt-2">sandipnarbat111@gmail.com</p>
+                    <p class="text-xs text-center text-gray-700">send a message</p>
+                </div>
+
+                <div class="bg-white text-black rounded-xl p-6 space-y-2 shadow-lg w-[60%]">
+                    <div class="flex items-center space-x-4">
+                        <img src="ins.png" alt="Email" class="w-6 h-6 -mt-6 ml-20">
+                        <h3 class="text-2xl text-center font-bold mt-5 -translate-x-20">Instagram</h3>
+                    </div>
+                    <p class="text-sm -mt-2">sandipnarbat111@gmail.com</p>
+                    <p class="text-xs text-center text-gray-700">send a message</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="w-[50%] lg:w-[50%]  rounded-xl p-10 relative z-10 -translate-x-28">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let’s Build Something epic</h2>
+                <p class="text-xl mb-10">Ready to turn your crazy ideas into scalable reality? Let's chat.</p>
+                <form class="space-y-6">
+                    <input type="text" placeholder="Full name"
+                        class="w-full border-4 border-white bg-transparent rounded-md px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="email" placeholder="Email id"
+                        class="w-full border-4 border-white bg-transparent rounded-md px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="url" placeholder="Company url"
+                        class="w-full border-4 border-white bg-transparent rounded-md px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <textarea rows="5" placeholder="Your message"
+                        class="w-full border-4 border-white bg-transparent rounded-md px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                    <button type="submit"
+                        class="bg-white text-black font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
