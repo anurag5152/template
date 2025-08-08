@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Magra&display=swap" rel="stylesheet">
+    <script>
+        tailwindConfig = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        abel: ['Abel', 'sans-serif'],
+                        abril: ['Abril Fatface', 'cursive'],
+                    },
+                    colors: {
+                        navtext: '#3C6071'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="antialiased bg-gradient-to-r from-[#e4ebf3] to-[#d3dce7]">
+
+    <section class="relative min-h-screen bg-gradient-to-tr from-[#efe8ff] via-[#e6e0ff] to-[#d9e6ff] overflow-hidden">
+
+        <nav class="absolute left-0 right-0 top-6 z-30">
+            <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+                <ul class="flex gap-12 mx-auto text-xl font-bold font-abril" style="color: #3C6071;">
+                    <li class="cursor-pointer">About</li>
+                    <li class="cursor-pointer">Skills</li>
+                    <li class="cursor-pointer">Experience</li>
+                    <li class="cursor-pointer">Blogs</li>
+                </ul>
+                <a href="#"
+                    class="px-6 py-2 rounded-full bg-[#1e88e5] text-[#3C6071] font-semibold shadow-md hover:bg-blue-600 transition">
+                    Download CV
+                </a>
+            </div>
+        </nav>
+        <div class="absolute -left-38 top-48 w-40 h-40 rounded-full border-2 border-white opacity-70 -translate-x-30">
+        </div>
+
+        <div class="max-w-7xl mx-auto ml-40 px-6 h-full flex items-center justify-between relative pt-28">
+
+            <div class="w-1/2 relative z-20">
+
+
+                <p class="font-abel text-indigo-300 tracking-wide text-xl ml-6 translate-y-12"
+                    style="font-family: 'Abel';">Hii I'm</p>
+
+                <h2 class="font-abel text-6xl mb-2 leading-tight ml-4 translate-y-10"
+                    style="font-family: 'Abel'; color:#274b50;">
+                    Steven Ben
+                </h2>
+
+                <h1 class="text-8xl font-bold leading-tight -ml-20 -mr-[60%] translate-x-20"
+                    style="font-family: 'Abril Fatface'; color:#295a5f;">
+                    <span class="mr-2">Content</span>
+                    <span style="color:#0ea5ff;">Creator</span>
+                </h1>
+
+                <p class="mt-8 ml-2 text-base leading-relaxed max-w-xl" style="font-family: 'Abel'; color:#396069;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit est
+                    necessitatibusnumquam nobis nam, perspiciatis accusamus placeat neque.
+                    Accusantium molestiae odit
+                </p>
+
+                <div class="mt-8 flex items-center gap-4">
+                    <a href="#"
+                        class="inline-flex items-center px-8 py-3 rounded-full bg-[#1e88e5] text-xl text-[#3C6071] font-medium shadow-sm hover:bg-blue-600 transition">
+                        View Blogs
+                    </a>
+                    <button
+                        class="w-4 h-4 border border-gray-700 flex items-center justify-center text-sm text-gray-700">
+                        <span class="font-bold translate-x-0.9 -translate-y-1 text-xl">↗</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="w-1/2 flex justify-center ml-[20%]">
+                <img src="man.png" alt="Profile Image" class="max-h-[500px] object-contain">
+            </div>
+        </div>
+        <div class="absolute left-80 bottom-20 w-48 h-48 rounded-full border-2 border-white opacity-60 translate-x-10">
+        </div>
+
+    </section>
+
+    <section class="relative py-16 bg-gradient-to-tr from-[#efe8ff] via-[#e6e0ff] to-[#d9e6ff] overflow-hidden">
+
+        <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full border-4 border-white opacity-40"></div>
+        <div class="absolute top-6 left-6 w-24 h-24 rounded-full border-4 border-white opacity-40"></div>
+        <div class="absolute top-10 -right-10 w-40 h-40 rounded-full border-4 border-white opacity-40"></div>
+
+        <h2 class="text-7xl text-center mb-12" style="font-family: 'Abril Fatface', serif; color: #3C6071;">
+            About <span class="text-blue-500">Me</span>
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-2 gap-6 px-6">
+            <div class="rounded-2xl h-48 bg-cover bg-center" style="width: 100%; background-image: url('flower.png');">
+            </div>
+
+            <div class="bg-[#d1d0d5] rounded-2xl h-48 p-6 flex items-center" style="width: 105%;">
+                <p class="text-[#3a5f67]" style="font-family: 'Magra', sans-serif;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderitest
+                    necessitatibus numquam nobis nam, perspiciatis ac cusamus placeat neque.
+                    Accusantium mole stiae odit quasi quod saepe
+                </p>
+            </div>
+            <div class="rounded-2xl h-48 bg-cover bg-center" style="width: 116%; background-image: url('scene.png');">
+            </div>
+
+            <div class="bg-[#6c6b80] rounded-2xl h-48 ml-20" style="width: 90%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-16 bg-gradient-to-tr from-[#efe8ff] via-[#e6e0ff] to-[#d9e6ff] overflow-hidden">
+
+    <!-- Background Circles -->
+    <div class="absolute top-10 left-[-50px] w-40 h-40 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-20 left-[-40px] w-32 h-32 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute top-10 right-[-50px] w-36 h-36 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-0 right-[-60px] w-44 h-44 border-4 border-white/50 rounded-full"></div>
+
+    <h2 class="text-6xl text-center mb-16 relative z-10" style="font-family: 'Abril Fatface', serif; color: #3C6071;">
+        My <span class="text-blue-500">Awesome</span> Services
+    </h2>
+
+    <div class="max-w-6xl mx-auto flex flex-col gap-16 px-6 relative z-10">
+
+        <div class="flex items-center gap-10">
+            <div class="w-[35%] text-xl border-2 border-white rounded-2xl flex justify-center items-center p-8">
+                <img src="s1.png" alt="Service 1" class="max-h-48 object-contain -ml-[30%]">
+                <div class="w-[10%] -mt-[10%] text-[#3C6071]">
+                    <span class="text-[#0084FF]">M</span>inimal
+                    <span class="text-[#0084FF]">V</span>iable
+                    <span class="text-[#0084FF]">P</span>roduct
+                </div>
+                <div class="mt-[35%] -ml-[10%] text-[#0084FF]">Digital Startup</div>
+            </div>
+            <div class="w-1/2">
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    <span class="font-bold">1.</span> Create MVP WebApp for your
+                    <span class="text-blue-500">Startup</span> fast &amp; awesome
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-10">
+            <div class="w-1/2">
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    <span class="font-bold">2.</span> Create Beautiful
+                    <span class="text-blue-500">Ecommerce</span> Website + Point Of Sale
+                </p>
+            </div>
+            <div class="w-[35%] border-2 border-white rounded-2xl flex justify-center items-center p-8">
+                <img src="s2.png" alt="Service 2" class="max-h-48 object-contain -ml-[10%]">
+                <div class="ml-10 text-xl text-[#3C6071]">
+                    <div><span class="text-[#0084FF]">E</span>commerce</div>
+                    <div><span class="text-[#0084FF]">W</span>ebsite</div>
+                    <div class="text-[#0084FF]">+ Point Of Sale </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-10">
+            <div class="w-[35%] border-2 border-white rounded-2xl flex justify-center items-center p-8">
+                <img src="s3.png" alt="Service 3" class="max-h-48 object-contain -mr-[10%]">
+                <div class="ml-12 text-xl text-[#3C6071]">
+                    <div>Finance</div>
+                    <div class="text-[#0084FF]">Academic</div>
+                    <div>Human resources</div>
+                    & more
+                </div>
+            </div>
+            <div class="w-1/2">
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    <span class="font-bold">3.</span> Create Web &amp; Application for your
+                    <span class="text-blue-500">School or Campus</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <section class="relative py-16 bg-gradient-to-tr from-[#f5f4ff] via-[#eae8ff] to-[#d9e6ff] overflow-hidden">
+
+    <div class="absolute top-10 left-[-50px] w-40 h-40 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-20 left-[-40px] w-32 h-32 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute top-10 right-[-50px] w-36 h-36 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-0 right-[-60px] w-44 h-44 border-4 border-white/50 rounded-full"></div>
+
+    <h2 class="text-6xl text-center mb-16 relative z-10" style="font-family: 'Abril Fatface', serif; color: #3C6071;">
+        My <span class="text-blue-500">Experience</span>
+    </h2>
+
+    <div class="max-w-6xl mx-auto flex flex-col items-center gap-16 px-6 relative z-10">
+
+        <div class="flex items-center gap-10 -ml-[50%]">
+            <div class="w-80 h-52 bg-white rounded-2xl overflow-hidden shadow">
+                <img src="e1.png" alt="Experience 1" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    Content Creator &amp; Blogger | <br>
+                    <span class="text-blue-500">2021 - Present</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-10 z-10 -mt-20">
+            <div class="w-80 h-52 bg-white rounded-2xl overflow-hidden shadow">
+                <img src="e2.png" alt="Experience 2" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    Content Creator &amp; Blogger | <br>
+                    <span class="text-blue-500">2021 - Present</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-10 -mt-[8%] -ml-[50%]">
+            <div class="w-80 h-52 bg-white rounded-2xl overflow-hidden shadow">
+                <img src="e3.png" alt="Experience 3" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <p class="text-[#3a5f67] text-2xl" style="font-family: 'Abel', sans-serif;">
+                    Content Creator &amp; Blogger | <br>
+                    <span class="text-blue-500">2021 - Present</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <section class="relative py-16 bg-gradient-to-tr from-[#f5f4ff] via-[#eae8ff] to-[#d9e6ff] overflow-hidden">
+
+    <div class="absolute top-10 left-[-50px] w-40 h-40 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-20 left-[-40px] w-32 h-32 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute top-10 right-[-50px] w-36 h-36 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-0 right-[-60px] w-44 h-44 border-4 border-white/50 rounded-full"></div>
+
+    <h2 class="text-6xl text-center mb-16 relative z-10" style="font-family: 'Abril Fatface', serif; color: #3C6071;">
+        Blogs
+    </h2>
+
+    <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 z-10">
+
+        <div class="bg-[#618CB7] p-4 rounded-2xl shadow-lg">
+            <img src="shark.png" alt="Blog 1" class="w-full h-48 object-cover rounded-xl mb-4">
+            <p class="text-white text-lg">The piece in the mountains is just surreal</p>
+            <p class="text-sm text-[#FFD580]">55k views <span class="text-gray-300">1mo ago #travel #youtube ...more</span></p>
+            <div class="flex items-center gap-3 mt-4">
+                <img src="shark.png" alt="Author" class="w-10 h-10 rounded-full">
+                <span class="text-white font-bold">Steven’s World 55k</span>
+            </div>
+        </div>
+
+        <div class="bg-[#618CB7] p-4 rounded-2xl shadow-lg">
+            <img src="sky.png" alt="Blog 2" class="w-full h-48 object-cover rounded-xl mb-4">
+            <p class="text-white text-lg">The piece in the mountains is just surreal</p>
+            <p class="text-sm text-[#FFD580]">55k views <span class="text-gray-300">1mo ago #travel #youtube ...more</span></p>
+            <div class="flex items-center gap-3 mt-4">
+                <img src="sky.png" alt="Author" class="w-10 h-10 rounded-full">
+                <span class="text-white font-bold">Steven’s World 55k</span>
+            </div>
+        </div>
+
+        <div class="bg-[#618CB7] p-4 rounded-2xl shadow-lg">
+            <img src="shark.png" alt="Blog 3" class="w-full h-48 object-cover rounded-xl mb-4">
+            <p class="text-white text-lg">The piece in the mountains is just surreal</p>
+            <p class="text-sm text-[#FFD580]">55k views <span class="text-gray-300">1mo ago #travel #youtube ...more</span></p>
+            <div class="flex items-center gap-3 mt-4">
+                <img src="shark.png" alt="Author" class="w-10 h-10 rounded-full">
+                <span class="text-white font-bold">Steven’s World 55k</span>
+            </div>
+        </div>
+
+        <div class="bg-[#618CB7] p-4 rounded-2xl shadow-lg">
+            <img src="sky.png" alt="Blog 4" class="w-full h-48 object-cover rounded-xl mb-4">
+            <p class="text-white text-lg">The piece in the mountains is just surreal</p>
+            <p class="text-sm text-[#FFD580]">55k views <span class="text-gray-300">1mo ago #travel #youtube ...more</span></p>
+            <div class="flex items-center gap-3 mt-4">
+                <img src="sky.png" alt="Author" class="w-10 h-10 rounded-full">
+                <span class="text-white font-bold">Steven’s World 55k</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <section class="relative py-16 bg-gradient-to-r from-[#E3E8F1] to-[#C9D6E6] overflow-hidden">
+
+    <!-- Background Circles -->
+    <div class="absolute top-10 left-[-50px] w-40 h-40 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-20 left-[-40px] w-32 h-32 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute top-10 right-[-50px] w-36 h-36 border-4 border-white/50 rounded-full"></div>
+    <div class="absolute bottom-0 right-[-60px] w-44 h-44 border-4 border-white/50 rounded-full"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <h2 class="text-4xl md:text-5xl font-bold font-abril" style="color:#2C3E50;">
+                Brand & Client <span class="text-[#2F80ED]">Testimonial</span>
+            </h2>
+            <p class="mt-10 text-[#446176] text-lg leading-relaxed">
+                4 years of experience creating websites and applications for many brands and clients in the world.
+                My vision is to provide the best for clients.
+            </p>
+
+            <div class="mt-16 flex flex-wrap gap-4 ">
+                <img src="lo1.png" alt="Brand 1" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo2.png" alt="Brand 2" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo3.png" alt="Brand 3" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo4.png" alt="Brand 4" class="w-20 h-20 rounded-full object-cover">
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4 ">
+                <img src="lo5.png" alt="Brand 5" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo6.png" alt="Brand 6" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo7.png" alt="Brand 7" class="w-20 h-20 rounded-full object-cover">
+                <img src="lo8.png" alt="Brand 8" class="w-20 h-20 rounded-full object-cover">
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4 ">
+                <img src="image1.png" alt="Brand 9" class="w-20 h-20 rounded-full object-cover">
+                <img src="image2.png" alt="Brand 10" class="w-20 h-20 rounded-full object-cover">
+            </div>
+        </div>
+
+        <div class="mt-[15%] -mb-10 backdrop-blur-lg p-6 border-2 border-white rounded-2xl shadow-md">
+            <p class="text-4xl text-[#446176] leading-relaxed">
+                “ hard worker, results exceed expectations, just the best ”
+            </p>
+            <div class="mt-6 flex items-center gap-3 translate-x-80">
+                <img src="g2.png" alt="Client" class="w-12 h-12 rounded-full object-cover">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center text-4xl mt-12 ml-[60%] relative z-10">
+        <a href="#latest-project" class="text-[#2F80ED] font-bold text-lg flex items-center justify-center gap-2">
+            My Latest Project
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+
+    <section class="relative py-16 bg-gradient-to-r from-[#e4ebf3] to-[#d3dce7] overflow-hidden">
+
+        <div class="absolute top-10 left-[-50px] w-40 h-40 border-4 border-white/50 rounded-full"></div>
+        <div class="absolute bottom-20 left-[-40px] w-32 h-32 border-4 border-white/50 rounded-full"></div>
+        <div class="absolute top-10 right-[-50px] w-36 h-36 border-4 border-white/50 rounded-full"></div>
+        <div class="absolute bottom-0 right-[-60px] w-44 h-44 border-4 border-white/50 rounded-full"></div>
+
+        <div class="relative max-w-3xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold mb-10">
+                <span class="text-[#2C3E50]">Get In</span>
+                <span class="text-[#2F80ED]"> Touch</span>
+            </h2>
+
+            <form class="space-y-4">
+                <input type="text" placeholder="FULL-NAME"
+                    class="w-full p-4 rounded-lg bg-[#5B89B3] text-[#2C3E50] font-medium placeholder-[#2C3E50] focus:outline-none">
+
+                <div class="flex gap-4">
+                    <input type="email" placeholder="EMAIL-ID"
+                        class="w-1/2 p-4 rounded-lg bg-[#B4B3B6] text-[#2C3E50] font-medium placeholder-[#2C3E50] focus:outline-none">
+                    <input type="url" placeholder="COMPANY-URL"
+                        class="w-1/2 p-4 rounded-lg bg-[#B4B3B6] text-[#2C3E50] font-medium placeholder-[#2C3E50] focus:outline-none">
+                </div>
+
+                <textarea placeholder="YOUR-MESSAGE" rows="4"
+                    class="w-full p-4 rounded-lg bg-[#5B89B3] text-[#2C3E50] font-medium placeholder-[#2C3E50] focus:outline-none"></textarea>
+
+                <button type="submit"
+                    class="mt-6 px-8 py-3 rounded-lg border-2 border-white/60 text-[#2C3E50] font-semibold hover:bg-white/10 transition">
+                    SEND MESSAGE
+                </button>
+            </form>
+
+            <div class="flex justify-center gap-8 mt-12">
+                <a href="#" class="flex items-center gap-2 text-[#2C3E50] hover:opacity-75">
+                    <img src="icon1.png" alt="First Icon" class="w-6 h-6">
+                    @Steven
+                </a>
+
+                <a href="#" class="flex items-center gap-2 text-[#2C3E50] hover:opacity-75">
+                    <img src="icon2.png" alt="Second Icon" class="w-6 h-6">
+                    @Steven
+                </a>
+
+                <a href="#" class="flex items-center gap-2 text-[#2C3E50] hover:opacity-75">
+                    <img src="icon3.png" alt="Third Icon" class="w-6 h-6">
+                    Steven
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
